@@ -1,0 +1,226 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-steps-rife-04 {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+        &.pa-alternative {
+            background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left-alternative.png);
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+        &.pa-alternative {
+            background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right-alternative.png);
+        }
+    }
+    &__number {
+        font-size: @font-55;
+        color: @color-blue-light-rife;
+        padding-right: 25px;
+    }
+    &__header {
+        border-left: 1px solid @color-bg-nav-gray;
+        padding-left: 25px;
+        margin-top: 15px;
+        .font-rife;
+    }
+    &__content {
+        margin-top: 15px;
+        padding: 50px 0;
+        line-height: 1.75em;
+        &.background {
+            background: url(/wp-content/themes/promoagency/dist/img/vertical-tab-line-bg.png) center bottom no-repeat;
+        }
+    }
+    &__chart {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 67px;
+        @media @lg-max {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+    &__button-header {
+        position: absolute;
+        opacity: 1;
+        .transition(all, 0.5s, ease);
+        font-size: @font-30;
+        line-height: @font-30;
+        .font-light;
+        @media @sm-max {
+            display: none;
+        }
+        &.active {
+            opacity: 0;
+            .transition(all, 0s, ease);
+        }
+        &.header-one {
+            top: 45.2%;
+            right: 110%;
+        }
+        &.header-two {
+            top: -60px;
+            left: 0;
+            right:0;
+            text-align: center;
+        }
+        &.header-three {
+            top: 45.2%;
+            left: 110%;
+        }
+        &.header-four {
+            bottom: -60px;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+    }
+    &__button {
+        position: absolute;
+        
+        button {
+            border: 2px solid @color-blue-light-rife;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            outline: none;
+            background-color: @color-white;
+            background-image: url(/wp-content/themes/promoagency/dist/img/tooltip-plus-minus.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: left center;
+            .transition(opacity, 0.2s, ease-in-out);
+            display: block;
+            position: relative;
+
+            .pa-steps-rife-04__tooltip {
+                position: absolute;
+                width: 50px;
+                height: auto;
+                left: -61px;
+                top: 58px;
+                background-color: @color-blue-dark;
+                width: 160px;
+                padding: 15px;
+                color: @color-text-white;
+                font-size: @font-12;
+                z-index: 5;
+                opacity: 0;
+                cursor: default;
+                pointer-events: none;
+                .transition();
+                line-height: 1.5;
+                box-shadow: 0px 10px 20px 0px rgba(176, 188, 212, 0.7);
+                border-radius: 10px;
+
+                header {
+                    font-size: @font-18;
+                    margin-bottom: 10px;
+                }
+
+                &.active {
+                    opacity: 1;
+                    .transition(0.4s);
+                    .arrow {
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        background-color: @color-blue-dark;
+                        position: absolute;
+                        top:-6px;
+                        left: calc(50% - 6px);
+                        transform: rotate(45deg);
+                    }
+                }
+
+                &.tooltip-one {
+                    @media @sm-max {
+                        border-radius: 0 10px 10px 10px;
+                    }
+                }
+                &.tooltip-three {
+                    @media @sm-max {
+                        border-radius: 10px 0 10px 10px;
+                    }
+                }
+            }
+        }
+
+        &.active {
+
+            button {
+                border: 2px solid @color-text-blue-dark;
+                background-image: url(/wp-content/themes/promoagency/dist/img/tooltip-plus-minus.png);
+                background-position: left -34px top 5px;
+                box-shadow: 0 0 0 8px rgba(176, 188, 212, 0.7);
+            }
+        }
+
+        &.button-one {
+            left: -19px;
+            top: 50%;
+            margin-top: -19px;
+            @media @sm-max {
+                .pa-steps-rife-04__tooltip {
+                    left: 0;
+                    .arrow {
+                        left: 3px!important;
+                        top: -7px!important;
+                    }
+                }
+            }
+        }
+
+        &.button-two  {
+            top: -19px;
+        }
+
+        &.button-three {
+            right: -19px;
+            top: 50%;
+            margin-top: -19px;
+            @media @sm-max {
+                .pa-steps-rife-04__tooltip {
+                    left: -124px;
+                    .arrow {
+                        top: -7px!important;
+                        right: 3px;
+                        left: unset!important;
+                    }
+                }
+            }
+        }
+
+        &.button-four {
+            bottom: -19px;
+        }
+    }
+}
+  

@@ -1,0 +1,99 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@box_one_color : #79bede;
+@box_two_color : #004387;  
+@box_three_color : #9cc85d;  
+
+.pa-contact-two {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/contact-one-bg.png);
+        background-repeat: repeat-x;
+        background-position: bottom center;
+    }
+    &__header {
+        text-align: center;
+        .header {
+            .font-regular;
+            margin-bottom: 25px;
+        }
+    }
+    &__form {
+        padding-top: 50px;
+        text-align: center;
+        @media @xl-max {
+            margin-bottom: 50px;
+        }
+    }
+    &__box {
+        background: @color-white;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            height: 115px;
+            width: 25px;
+            position: absolute;
+            left:0;
+            top:42%;
+        }
+        &.box-one {
+            &::before {
+                background: @box_one_color;
+            }
+
+        }
+        &.box-two {
+            &::before {
+                background: @box_two_color;
+            }
+        }
+        &.box-three {
+            &::before {
+                background: @box_three_color;
+            }
+        }
+        .box-image {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &__wrapper {
+        padding: 25px 0;
+        .name {
+            color: @color-blue-dark;
+            font-size: @font-22;
+            margin-bottom: 15px;
+            padding: 0 40px;
+        }
+        .position {
+            color: @color-blue-dark;
+            font-size: @font-14;
+            margin-bottom: 15px;
+            padding: 0 40px;
+        }
+        .mail {
+            color: @color-blue-dark;
+            font-size: @font-14;
+            padding: 25px 40px 0 85px;
+            border-top: 1px solid @color-bg-nav-gray;
+            position: relative;
+            cursor: pointer;
+            img {
+                position: absolute;
+                left:40px;
+            }
+            a {
+                color: @color-blue-dark;
+            }
+        }
+    }
+}

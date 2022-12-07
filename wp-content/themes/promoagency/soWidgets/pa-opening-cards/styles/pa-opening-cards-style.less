@@ -1,0 +1,113 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-opening-cards {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+
+    > .container {
+        max-width: 900px;
+    }
+
+    &__subheader {
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        background-color: @color-white;
+        box-shadow: 0px 10px 30px 0px rgba(6, 65, 123, 0.15);
+
+        @media @lg-max {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__icon {
+
+        &__wrap {
+            padding: 25px 15px 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-bottom: 1px solid #edf2f6;
+
+            .pa-opening-cards__toggle {
+                position: absolute;
+                bottom: -14px;
+                left: 50%;
+                margin-left: -14px;
+                z-index: 2;
+                width: 28px;
+                height: 28px;
+
+                &.active {
+                    
+                    button {
+                        background-position: -58px -10px;
+                    }
+                }
+
+                button {
+                    background-image: url(/wp-content/themes/promoagency/dist/img/bats-card-arrows-sprite.png);
+                    background-position: -10px -10px;
+                    background-repeat: no-repeat;
+                    background-size: auto;
+                    width: 28px;
+                    height: 28px;
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+                    margin: 0;
+                    padding: 0;  
+                }
+            }
+        }
+    }
+
+    &__hidden {
+        padding: 30px 15px;
+        background-color: #edf2f6;
+        font-size: @font-14;
+        display: none;
+    }
+
+    &__bottom {
+        padding: 40px 15px;
+
+        &__header {
+            font-size: @font-18;
+            margin-bottom: 20px;
+        }
+
+        &__content {
+            font-size: @font-14;
+        }
+    }
+}

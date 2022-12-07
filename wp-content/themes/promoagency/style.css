@@ -1,0 +1,36 @@
+/*
+Theme Name: promoagency THEME
+Theme URI: http://promoagency.pl
+Version: 1.0
+Description: Dedykowany motyw autorstwa promoagency.pl
+Author: promoagency.pl
+Author URI: http://promoagency.pl
+Text Domain: pa
+*/
+
+
+
+/*Zmiany dodana przez Sollers Sp.z.o.o */
+
+/* Stylizacja wyświetlania zdjęć w insights
+
+Tylko Dodanie po ręcznym dodaniu jednej z klas do obrazka.
+
+*/
+
+
+.sl-center-align{
+
+text-align: center;
+}
+
+.sl-float-right{
+
+float: right;
+}
+
+.sl-float-left{
+float: left;
+
+}
+

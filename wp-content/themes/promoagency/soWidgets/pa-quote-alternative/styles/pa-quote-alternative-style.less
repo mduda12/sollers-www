@@ -1,0 +1,109 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_color : #004888;
+
+.pa-quote-alternative {
+    background-color: @bg_color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media @sm-max {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__wrapper {
+        position: relative;
+        padding-top: @widget_padding_top;
+        padding-bottom: @widget_padding_bottom;
+        .quote-before {
+            width: 188px;
+            height: 37px;   
+            position: absolute;
+            left:0;
+            top:-17px;
+            background: @color-blue;
+            display: block;
+        }
+        .quote-after {
+            content: '';
+            width: 188px;
+            height: 37px;   
+            position: absolute;
+            right:0;
+            bottom:-17px;
+            background: @color-blue;
+            display: block;
+        }
+    }
+    &__data {
+        max-width: 915px;
+        margin: 0 auto;
+        .header {
+            margin-bottom: 15px;
+        }
+        .description {
+            font-size: @font-14;
+            margin-top: 10px;
+        }
+        .author-image {
+            width: 140px;
+            height: 140px;  
+            margin: 25px auto 0 auto; 
+            border-style: solid;
+            border-width: 7px;
+            border-color: #366d9f;
+            border-radius: 50%;
+            img {
+                max-width: 100%;
+                border-radius: 50%;
+            }          
+        }
+        .author {
+            font-size: @font-14;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+        .position {
+            font-size: @font-14;
+            font-style: italic;
+        }
+    }
+    .so-panel.widget & ul.slick-dots {
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+        margin: 40px 0 0 0;
+        li {
+            display: inline-block;
+            background: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            button {
+                background: 0;
+                background-repeat: no-repeat;
+                text-indent: -9999px;
+                overflow:hidden;
+                width: 60px;
+                .transition(all, 0.5s, ease);
+                margin: 0 8px;
+                border: 0;
+                outline: none;
+                padding: 0;
+                height: 4px;
+                border-top: 2px solid transparent;
+                border-bottom: 2px solid @color-blue-light;
+            }
+            &.slick-active {
+                button {
+                    height: 4px;
+                    border-top: 2px solid @color-white;
+                    border-bottom: 2px solid @color-white;
+                }
+            }
+        }
+    }
+}

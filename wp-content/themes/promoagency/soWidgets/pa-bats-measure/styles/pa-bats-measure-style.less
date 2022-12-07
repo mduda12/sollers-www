@@ -1,0 +1,136 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-bats-measure {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+
+    &__left {
+        padding-right: 65px;
+
+        @media @xl-max {
+            padding-right: 0;
+        }
+    }
+
+    &__right {
+        padding-left: 65px;
+        margin-top: 70px;
+
+        @media @xl-max {
+            padding-left: 0;
+        }
+    }
+
+    &__image {
+        margin-top: 40px;
+        z-index: 2;
+
+        &__wrap {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__box {
+        background: @color-white;
+        padding: 33px 30px;
+        box-shadow: 0px 15px 25px 0px rgba(6, 65, 123, 0.1);
+        text-align: left;
+        font-size: @font-14;
+        margin-bottom: 20px;
+        .transition(all, 0.5s, ease);
+        position: relative;
+
+        &:hover {
+            box-shadow: 0px 15px 25px 0px rgba(6, 65, 123, 0.4);
+        }
+
+        &--one {
+
+            &--line {
+                position: absolute;
+                left: 100%;
+                margin-left: -15px;
+                top: 50%;
+                margin-top: -15px;
+
+                @media @lg-max {
+                    display: none;
+                }
+            }
+        }
+
+        &--two {
+
+            &--line {
+                position: absolute;
+                left: 100%;
+                margin-left: -15px;
+                top: 50%;
+                margin-top: -15px;
+
+                @media @lg-max {
+                    display: none;
+                }
+            }
+        }
+
+        &--three {
+
+            &--line {
+                position: absolute;
+                right: 100%;
+                margin-right: -15px;
+                top: 50%;
+                margin-top: -15px;
+
+                @media @lg-max {
+                    display: none;
+                }
+            }
+        }
+
+        &--four {
+
+            &--line {
+                position: absolute;
+                right: 100%;
+                margin-right: -15px;
+                top: 50%;
+                margin-top: -15px;
+
+                @media @lg-max {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,97 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-box-tia {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    &__box {
+        margin-bottom: 25px;
+        border: 2px solid rgba(175,193,211,0.31);
+        padding: 20px;
+        .transition(all, 0.5s, ease);
+        &:hover {
+            box-shadow: 0px 6px 24px 0px rgba(37, 48, 61, 0.2);
+            background-color: #004488;
+            .pa-box-tia__image {
+                .hover {
+                    opacity: 1;
+                    display: block;
+                }
+                .normal {
+                    opacity: 0;
+                    display: none;
+                }
+            }
+            .pa-box-tia__content {
+                .title, .content {
+                    color: @color-white;
+                }
+            }
+        }
+    }
+    &__image {
+        .transition(all, 0.5s, ease);
+        position: relative;
+        padding-bottom: 25px;
+        margin-bottom: 10px;
+        img {
+            max-width: 100%;
+            .transition(all, 0.5s, ease);
+            &.hover {
+                opacity: 0;
+                display: none;
+            }
+        }
+        .line {
+            position: absolute;
+            bottom:0;
+            left:0;
+            width: 75px;
+            height: 4px;
+            background-color: #9cc85d;
+            display: block;
+        }
+    }
+    &__content {
+        @media @sm-max {
+            padding: 15px;
+        }
+        .transition(all, 0.5s, ease);
+        .title {
+            .font-medium;
+            font-size: @font-20;
+            position: relative;
+            margin-bottom: 10px;
+        }
+    }
+}

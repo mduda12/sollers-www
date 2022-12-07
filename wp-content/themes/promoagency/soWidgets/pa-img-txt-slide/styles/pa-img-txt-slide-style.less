@@ -1,0 +1,189 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-img-txt-slide {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        font-size: @font-24;
+        margin-bottom: 20px;
+
+        &--number {
+            font-size: @font-36;
+            display: inline-block;
+            min-width: 65px;
+            padding: 10px 0;
+            margin-right: 25px;
+            background: url(/wp-content/themes/promoagency/dist/img/risk-number-line.png) right center no-repeat;
+        }
+
+        @media @xl-max {
+            max-width: 555px;
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+
+        &__wrap {
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: 0px 15px 25px 0px rgba(6, 65, 123, 0.1);
+            margin-bottom: 20px;
+
+            &__image {
+                overflow: hidden;
+
+                img {
+                    display: block;
+                    .transition();
+                }
+
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                    img.img-zoom {
+                        -ms-transform: scale(1.1);
+                        transform: scale(1.1);
+                        .transition(0.5s);
+                    }
+
+                .pa-img-txt-slide__item__wrap__right {
+                    background-color: #004987;
+                    .transition();
+                }
+
+                .pa-img-txt-slide__item__wrap__header {
+                    color: @color-white;
+                }
+        
+                .pa-img-txt-slide__item__wrap__text {
+                    color: @color-white;
+                }
+                
+                .pa-img-txt-slide__item__wrap__right  {
+
+                    .so-panel.widget & ul li {
+
+                        &.slick-active {
+    
+                            button {
+                                background-color: #9cc85d;
+                            }
+                        }
+
+                        button {
+                            background-color: #fff;
+                        }
+                    }
+                }
+
+            }
+
+
+            &__left {
+                width: 50%;
+    
+                @media @xl-max {
+                    width: 100%;
+                }
+            }
+    
+            &__right {
+                width: 50%;
+                background-color: #fff;
+                padding: 20px 0;
+    
+                @media @xl-max {
+                    width: 100%;
+                }
+    
+                .so-panel.widget & ul {
+                    margin-top: 20px;
+                    padding: 0 20px;
+    
+                    li {
+                        background: none;
+                        padding-left: 0;
+                        margin-bottom: 0;
+                        display: inline-block;
+    
+                        &.slick-active {
+    
+                            button {
+                                background-color: #9cc85d;
+                            }
+                        }
+    
+                        button {
+                            width: 40px;
+                            height: 3px;
+                            background: none;
+                            background-color: #004987;
+                            border: none;
+                            text-indent: -9999px;
+                            outline: none;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+
+            &__header {
+                font-size: @font-20;
+                margin-bottom: 10px;
+                padding: 0 20px;
+            }
+    
+            &__underline {
+                margin-bottom: 10px;
+            }
+    
+            &__text {
+                font-size: @font-14;
+                padding: 0 20px;
+            }
+
+            @media @xl-max {
+                max-width: 555px;
+                margin: 0 auto 40px;
+            }
+        }
+    }
+
+    &__btn {
+        text-align: center;
+        margin-top: 30px;
+    }
+}

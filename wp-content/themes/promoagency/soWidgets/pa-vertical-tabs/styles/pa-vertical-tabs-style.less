@@ -1,0 +1,89 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-vertical-tabs {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+
+    &__row {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    &__nav {
+        padding: 40px 0;
+        border-right: 1px solid @color-text-blue-dark; 
+
+        @media @md-max {
+            border-right: none;
+        }
+
+        
+        &__item {
+            width: 100%;
+            padding: 15px 20px 15px 50px;
+            color: @color-text-blue-dark;
+            background: url(/wp-content/themes/promoagency/dist/img/ul-icon-blue.png) left top 15px no-repeat;
+
+            &:hover {
+                color: @color-text-green;
+            }
+
+            &.active {
+                color: @color-text-green;
+                .font-medium();
+                background: url(/wp-content/themes/promoagency/dist/img/ul-icon.png) left top 15px no-repeat;
+            }
+        }
+    }
+
+    &__contents {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background: url(/wp-content/themes/promoagency/dist/img/vertical-tab-line-bg.png) center top no-repeat;
+
+        @media @md-max {
+            background: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+                padding-left: 20px;
+                background: url(/wp-content/themes/promoagency/dist/img/list-point-green.png) left top 8px no-repeat;
+            }
+        }
+    }
+}

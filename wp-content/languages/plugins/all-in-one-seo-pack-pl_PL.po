@@ -1,0 +1,991 @@
+# Translation of Plugins - All in One SEO &#8211; Best WordPress SEO Plugin &#8211; Easily Improve Your SEO Rankings - Stable (latest release) in Polish
+# This file is distributed under the same license as the Plugins - All in One SEO &#8211; Best WordPress SEO Plugin &#8211; Easily Improve Your SEO Rankings - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-07-09 12:36:44+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: pl\n"
+"Project-Id-Version: Plugins - All in One SEO &#8211; Best WordPress SEO Plugin &#8211; Easily Improve Your SEO Rankings - Stable (latest release)\n"
+
+#: app/Common/Admin/SiteHealth.php:323 app/Common/Admin/SiteHealth.php:389
+msgid "Search Page"
+msgstr "Strona wyszukiwania"
+
+#: app/Common/Utils/Tags.php:531
+msgid "Categories"
+msgstr "Kategorie"
+
+#: app/Common/Admin/SiteHealth.php:317 app/Common/Admin/SiteHealth.php:383
+msgid "Paginated Content"
+msgstr "Treść podzielona na strony"
+
+#: app/Common/Admin/SiteHealth.php:322 app/Common/Admin/SiteHealth.php:388
+#: languages/aioseo-lite.php:1316
+#: dist/Lite/assets/js/settings-partials-Breadcrumbs-Archives-vue.js:1
+msgid "Date Archives"
+msgstr "Archiwum dat"
+
+#: app/Common/Admin/SiteHealth.php:321 app/Common/Admin/SiteHealth.php:387
+#: languages/aioseo-lite.php:1322
+#: dist/Lite/assets/js/settings-partials-Breadcrumbs-Archives-vue.js:1
+msgid "Author Archives"
+msgstr "Archiwum autora"
+
+#: app/Common/Admin/SiteHealth.php:278
+msgid "Go to Plugins"
+msgstr "Przejdź do wtyczek"
+
+#: app/Common/Admin/SiteHealth.php:203
+msgid "Your Organization Name and Logo are set"
+msgstr "Ustawiono nazwę organizacji oraz jej logo"
+
+#: app/Common/Admin/SiteHealth.php:191
+msgid "Your Organization Name and/or Logo are blank"
+msgstr "Brak Twojej nazwy organizacji i/lub logo"
+
+#: app/Common/Admin/SiteHealth.php:126
+msgid "Your site appears in search results"
+msgstr "Twoja witryna pojawia się w wynikach wyszukiwania"
+
+#: app/Common/Admin/SiteHealth.php:118
+msgid "Your site does not appear in search results"
+msgstr "Twoja witryna nie pojawia się w wynikach wyszukiwania"
+
+#: app/Common/Admin/Admin.php:333 languages/aioseo-lite.php:1958
+#: dist/Lite/assets/js/chunk-common.js:1
+msgid "Notifications"
+msgstr "Powiadomienia"
+
+#: languages/aioseo-lite.php:1952 dist/Lite/assets/js/chunk-common.js:1
+msgid "URL"
+msgstr "Adres URL"
+
+#: languages/aioseo-lite.php:1224 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: dist/Lite/assets/js/about-Main-vue.js:1
+#: dist/Lite/assets/js/chunk-common.js:1
+msgid "Not Installed"
+msgstr "Nie zainstalowana"
+
+#: app/Common/Admin/Admin.php:254
+msgid "No results found."
+msgstr "Brak wyników."
+
+#: app/Common/Admin/Admin.php:252
+msgid "(no title)"
+msgstr "(brak tytułu)"
+
+#: languages/aioseo-lite.php:1209 dist/Lite/assets/js/about-AboutUs-vue.js:1
+#: dist/Lite/assets/js/about-Main-vue.js:1
+msgid "Activate"
+msgstr "Włącz"
+
+#: app/Common/Admin/Admin.php:250
+msgid "Update"
+msgstr "Zaktualizuj"
+
+#: app/Common/Admin/Admin.php:251
+msgid "Add Link"
+msgstr "Dodaj odnośnik"
+
+#: languages/aioseo-lite.php:267 dist/Lite/assets/js/chunk-common.js:1
+msgid "Reservations"
+msgstr "Rezerwacje"
+
+#: languages/aioseo-lite.php:1146 languages/aioseo-pro.php:413
+#: dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Main-vue.js:1
+#: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+msgid "Phone Number"
+msgstr "Numer telefonu"
+
+#: languages/aioseo-lite.php:273 dist/Lite/assets/js/chunk-common.js:1
+msgid "Emergency"
+msgstr "Awaria"
+
+#: languages/aioseo-lite.php:264 dist/Lite/assets/js/chunk-common.js:1
+msgid "Sales"
+msgstr "Sprzedaż"
+
+#: app/Common/Utils/Tags.php:329 languages/aioseo-lite.php:227
+#: languages/aioseo-pro.php:254
+#: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
+#: dist/Lite/assets/js/setup-wizard.js:1
+msgid "Category"
+msgstr "Kategoria"
+
+#: languages/aioseo-lite.php:199 dist/Lite/assets/js/chunk-common.js:1
+msgid "Archive"
+msgstr "Archiwizuj"
+
+#: app/Common/Breadcrumbs/Breadcrumbs.php:267
+msgid "Page"
+msgstr "Strona"
+
+#: app/Common/Admin/Notices/Review.php:93 languages/aioseo-lite.php:4021
+#: dist/Lite/assets/js/chunk-common.js:1
+msgid "No thanks"
+msgstr "Nie dziękuję"
+
+#: languages/aioseo-lite.php:3991 dist/Lite/assets/js/chunk-common.js:1
+msgid "Dismiss"
+msgstr "Odrzuć"
+
+#: app/Common/Tools/SystemStatus.php:307 languages/aioseo-lite.php:837
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-SystemStatus-vue.js:1
+msgid "Active Plugins"
+msgstr "Włączone wtyczki"
+
+#: app/Common/Tools/SystemStatus.php:339 languages/aioseo-lite.php:840
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-SystemStatus-vue.js:1
+msgid "Inactive Plugins"
+msgstr "Wtyczki wyłączone"
+
+#: languages/aioseo-pro.php:35
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
+msgid "Include Custom Fields"
+msgstr "Dodaj Pola Niestandardowe"
+
+#: languages/aioseo-pro.php:38
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
+msgid "Enable this option to look for videos in custom fields as well."
+msgstr "Włącz tę opcję, aby wyszukać również wideo w niestandardowych polach."
+
+#: languages/aioseo-lite.php:1078 dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
+msgid "Disallow"
+msgstr "Zabroń"
+
+#: languages/aioseo-lite.php:1075 dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
+msgid "Allow"
+msgstr "Pozwalaj"
+
+#: languages/aioseo-lite.php:1069 dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
+msgid "Rule"
+msgstr "Reguła"
+
+#: languages/aioseo-lite.php:5239
+#: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+msgid "Exclude Images"
+msgstr "Wyklucz obrazy"
+
+#: app/Common/Tools/SystemStatus.php:53 app/Common/Utils/Tags.php:475
+#: app/Common/Utils/Tags.php:487 languages/aioseo-lite.php:4956
+#: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Main-vue.js:1
+msgid "Site Title"
+msgstr "Tytuł witryny"
+
+#: app/Common/Tools/SystemStatus.php:97
+msgid "Search Engine Visibility"
+msgstr "Widoczność dla wyszukiwarek"
+
+#: app/Common/Tools/SystemStatus.php:57
+msgid "Site Language"
+msgstr "Język witryny"
+
+#: languages/aioseo-lite.php:2366
+#: dist/Lite/assets/js/about-GettingStarted-vue.js:1
+#: dist/Lite/assets/js/about-Main-vue.js:1
+#: dist/Lite/assets/js/dashboard-Main-vue.js:1
+msgid "Video SEO Module"
+msgstr "Moduł SEO Video"
+
+#: languages/aioseo-lite.php:2102
+#: dist/Lite/assets/js/about-GettingStarted-vue.js:1
+#: dist/Lite/assets/js/about-Main-vue.js:1
+#: dist/Lite/assets/js/dashboard-Main-vue.js:1
+#: dist/Lite/assets/js/feature-manager-FeatureManager-vue.js:1
+#: dist/Lite/assets/js/feature-manager-Main-vue.js:1
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+#: dist/Lite/assets/js/setup-wizard-Success-vue.js:1
+msgid "SEO for Categories, Tags and Custom Taxonomies"
+msgstr "SEO dla Kategorii, Tagów i Własnych Klasyfikacji"
+
+#: languages/aioseo-lite.php:3307
+#: dist/Lite/assets/js/settings-Advanced-vue.js:1
+#: dist/Lite/assets/js/settings-Main-vue.js:1
+msgid "This displays an SEO News widget on the dashboard."
+msgstr "Wyświetla widżet SEO News na twoim kokpicie."
+
+#: app/Common/Admin/Dashboard.php:33
+msgid "SEO News"
+msgstr "Nowości SEO"
+
+#: languages/aioseo-lite.php:3081
+#: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
+msgid "Get Started"
+msgstr "Rozpocznij"
+
+#: languages/aioseo-lite.php:2639
+#: dist/Lite/assets/js/seo-analysis-AnalyzeCompetitorSite-vue.js:1
+#: dist/Lite/assets/js/seo-analysis-Main-vue.js:1
+msgid "Analyze"
+msgstr "Analizuj"
+
+#: languages/aioseo-lite.php:718
+#: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+msgid "Block Bad Bots using HTTP"
+msgstr "Blokuj Bad Bots korzystając z HTTP."
+
+#: languages/aioseo-lite.php:721
+#: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+msgid "Block Referral Spam using HTTP"
+msgstr "Blokuj Referral Spam korzystając z HTTP"
+
+#: languages/aioseo-lite.php:727
+#: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+msgid "Use Custom Blocklists"
+msgstr "Korzystaj z własnej Blocklisty"
+
+#: languages/aioseo-lite.php:303
+#: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
+#: dist/Lite/assets/js/about-Main-vue.js:1
+#: dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/redirects-ImportExport-vue.js:1
+#: dist/Lite/assets/js/redirects-partials-ExportRedirects-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Media-vue.js:1
+#: dist/Lite/assets/js/search-appearance.js:1
+#: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
+#: dist/Lite/assets/js/tools-ImportExport-vue.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-partials-ExportSettings-vue.js:1
+msgid "Image SEO"
+msgstr "Obraz SEO"
+
+#. Translators: This is an action link users can click to purchase a license
+#. for All in One SEO Pro.
+#: app/Lite/Admin/Admin.php:42 app/Lite/Admin/Admin.php:66
+#: app/Lite/Main/Filters.php:64 languages/aioseo-lite.php:3927
+#: dist/Lite/assets/js/chunk-common.js:1
+msgid "Upgrade to Pro"
+msgstr "Rozszerz do Pro"
+
+#. Translators: This is an action link users can click to open our general
+#. documentation page.
+#: app/Lite/Main/Filters.php:59
+msgid "Documentation"
+msgstr "Dokumentacja"
+
+#. Translators: This is an action link users can click to open the General
+#. Settings menu.
+#: app/Common/Admin/Admin.php:485 app/Lite/Main/Filters.php:49
+#: languages/aioseo-lite.php:1459
+#: dist/Lite/assets/js/tools-ImportExport-vue.js:1
+#: dist/Lite/assets/js/tools-partials-ImportOthers-vue.js:1
+msgid "SEO Settings"
+msgstr "Ustawienia SEO"
+
+#: languages/aioseo-lite.php:1913 dist/Lite/assets/js/about-Main-vue.js:1
+msgid "About"
+msgstr "Informacje"
+
+#: languages/aioseo-lite.php:243 languages/aioseo-pro.php:422
+#: dist/Lite/assets/js/chunk-common.js:1 dist/Lite/assets/js/setup-wizard.js:1
+msgid "License Key"
+msgstr "Klucz licencji"
+
+#: languages/aioseo-lite.php:2570
+#: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+msgid "Facebook Admin ID"
+msgstr "ID Administratora Facebook"
+
+#: languages/aioseo-lite.php:2573
+#: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+msgid "Facebook App ID"
+msgstr "ID Aplikacji na Facebooku"
+
+#: languages/aioseo-lite.php:4894
+#: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
+msgid "Enable Sitemap Indexes"
+msgstr "Aktywuj indeksy mapy strony"
+
+#: languages/aioseo-lite.php:759 dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/search-appearance.js:1
+#: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
+#: dist/Lite/assets/js/settings-lite-Breadcrumbs-vue.js:1
+#: dist/Lite/assets/js/settings-pro-Breadcrumbs-vue.js:1
+#: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
+msgid "Taxonomies"
+msgstr "Klasyfikacje"
+
+#: languages/aioseo-lite.php:4617 dist/Lite/assets/js/chunk-common.js:1
+msgid "Page URL"
+msgstr "URL strony"
+
+#: languages/aioseo-lite.php:5220 languages/aioseo-pro.php:17
+#: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
+msgid "Additional Pages"
+msgstr "Dodatkowe strony"
+
+#: languages/aioseo-lite.php:4770 dist/Lite/assets/js/chunk-common.js:1
+msgid "Add URL"
+msgstr "Dodaj URL"
+
+#: app/Common/Sitemap/Output.php:32
+msgid "dynamically"
+msgstr "dynamicznie"
+
+#: languages/aioseo-lite.php:3741 languages/aioseo-pro.php:26
+#: dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-NewsSitemapActivate-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
+msgid "Post Types"
+msgstr "Typy treści"
+
+#: languages/aioseo-lite.php:4610 dist/Lite/assets/js/chunk-common.js:1
+msgid "Last Modified"
+msgstr "Ostatnia zmiana"
+
+#. Plugin Name of the plugin
+msgid "All in One SEO"
+msgstr "All in One SEO"
+
+#: app/Common/Tools/SystemStatus.php:82 app/Common/Tools/SystemStatus.php:86
+#: app/Common/Tools/SystemStatus.php:205 app/Common/Tools/SystemStatus.php:221
+#: app/Common/Tools/SystemStatus.php:225 app/Common/Tools/SystemStatus.php:229
+#: languages/aioseo-lite.php:675 dist/Lite/assets/js/chunk-common.js:1
+msgid "Yes"
+msgstr "Tak"
+
+#: app/Common/Tools/SystemStatus.php:82 app/Common/Tools/SystemStatus.php:86
+#: app/Common/Tools/SystemStatus.php:205 app/Common/Tools/SystemStatus.php:221
+#: app/Common/Tools/SystemStatus.php:225 app/Common/Tools/SystemStatus.php:229
+#: languages/aioseo-lite.php:672 dist/Lite/assets/js/chunk-common.js:1
+msgid "No"
+msgstr "Nie"
+
+#: languages/aioseo-lite.php:3157
+#: dist/Lite/assets/js/settings-WebmasterTools-vue.js:1
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: languages/aioseo-lite.php:406 languages/aioseo-pro.php:261
+#: dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/settings-AccessControl-vue.js:1
+#: dist/Lite/assets/js/settings-lite-AccessControl-vue.js:1
+#: dist/Lite/assets/js/settings-Main-vue.js:1
+#: dist/Lite/assets/js/settings-pro-AccessControl-vue.js:1
+msgid "Author"
+msgstr "Autor"
+
+#: languages/aioseo-lite.php:86 dist/Lite/assets/js/post-settings.js:1
+#: dist/Lite/assets/js/social-networks.js:1
+msgid "Twitter"
+msgstr "Twitter"
+
+#: languages/aioseo-lite.php:4741 dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/posts-table.js:1
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: app/Common/Tools/SystemStatus.php:129 app/Common/Tools/SystemStatus.php:133
+#: app/Common/Tools/SystemStatus.php:137 app/Common/Tools/SystemStatus.php:141
+#: app/Common/Tools/SystemStatus.php:145 app/Common/Tools/SystemStatus.php:149
+#: app/Common/Tools/SystemStatus.php:153
+msgid "Not set"
+msgstr "Nie ustawiono"
+
+#: languages/aioseo-lite.php:681 dist/Lite/assets/js/chunk-common.js:1
+msgid "On"
+msgstr "Włączone"
+
+#: languages/aioseo-lite.php:678 dist/Lite/assets/js/chunk-common.js:1
+msgid "Off"
+msgstr "Wyłączone"
+
+#: app/Common/Tools/SystemStatus.php:176 languages/aioseo-pro.php:248
+msgid "Operating System"
+msgstr "System operacyjny"
+
+#: languages/aioseo-lite.php:624 dist/Lite/assets/js/chunk-common.js:1
+msgid "Server"
+msgstr "Serwer"
+
+#: app/Common/Tools/SystemStatus.php:196
+msgid "PHP Version"
+msgstr "Wersja PHP"
+
+#: app/Common/Tools/SystemStatus.php:200
+msgid "PHP Memory Limit"
+msgstr "PHP Limit pamięci"
+
+#: languages/aioseo-lite.php:3733 dist/Lite/assets/js/chunk-common.js:1
+msgid "Performance"
+msgstr "Wydajność"
+
+#: languages/aioseo-lite.php:4797 dist/Lite/assets/js/posts-table.js:1
+msgid "Save"
+msgstr "Zapisz"
+
+#: languages/aioseo-lite.php:2003
+#: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
+#: dist/Lite/assets/js/about-Main-vue.js:1
+msgid "XML Sitemap"
+msgstr "Mapa strony XML"
+
+#: languages/aioseo-lite.php:1072 dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
+msgid "Directory Path"
+msgstr "Ścieżka do pliku"
+
+#: languages/aioseo-lite.php:615 dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
+msgid "User Agent"
+msgstr "User Agent"
+
+#: languages/aioseo-lite.php:1081 dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-RobotsEditor-vue.js:1
+msgid "Add Rule"
+msgstr "Dodaj regułę"
+
+#: languages/aioseo-lite.php:4907
+#: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
+msgid "Allows you to specify the maximum number of posts in a sitemap (up to 50,000)."
+msgstr "Pozwala ci na określenie maksymalnej liczby postów na twojej mapie strony (do 50000)."
+
+#: languages/aioseo-lite.php:5213 languages/aioseo-pro.php:32
+#: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-NewsSitemapActivate-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
+msgid "Select which Post Types appear in your sitemap."
+msgstr "Wybierz, które rodzaje postów pojawiają się na twojej mapie strony."
+
+#: languages/aioseo-lite.php:5201
+#: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
+msgid "Include Date Archives in your sitemap."
+msgstr "Dołącz Archiwa Daty do twojej mapy strony."
+
+#: languages/aioseo-lite.php:5209
+#: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-RssSitemap-vue.js:1
+msgid "Include Author Archives in your sitemap."
+msgstr "Dołącz archiwa Autorów do twojej mapy strony."
+
+#: languages/aioseo-lite.php:83 dist/Lite/assets/js/post-settings.js:1
+#: dist/Lite/assets/js/social-networks.js:1
+msgid "Facebook"
+msgstr "Facebook"
+
+#: languages/aioseo-lite.php:2680 dist/Lite/assets/js/dashboard-Main-vue.js:1
+msgid "View the Changelog"
+msgstr "Zobacz Changelog"
+
+#: languages/aioseo-lite.php:2683 dist/Lite/assets/js/dashboard-Main-vue.js:1
+msgid "Watch video tutorials"
+msgstr "Zobacz instruktaż wideo"
+
+#: languages/aioseo-lite.php:2686 dist/Lite/assets/js/dashboard-Main-vue.js:1
+msgid "Getting started? Read the Beginners Guide"
+msgstr "Dopiero zaczynasz? Przeczytaj instrukcję obsługi dla początkujących"
+
+#: app/Common/Admin/Admin.php:325 app/Common/Admin/SiteHealth.php:91
+msgid "SEO"
+msgstr "SEO"
+
+#: app/Common/Admin/Admin.php:466
+msgid "Edit SEO"
+msgstr "Edytuj SEO"
+
+#: app/Common/Tools/SystemStatus.php:49
+msgid "Version"
+msgstr "Wersja"
+
+#: app/Common/Admin/Admin.php:118 languages/aioseo-lite.php:11
+#: dist/Lite/assets/js/feature-manager-Main-vue.js:1
+#: dist/Lite/assets/js/feature-manager.js:1
+msgid "Feature Manager"
+msgstr "Menadżer funkcjonalności"
+
+#: languages/aioseo-lite.php:970
+#: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+msgid "Robots.txt"
+msgstr "Robots.txt"
+
+#: languages/aioseo-lite.php:797
+#: dist/Lite/assets/js/tools-HtaccessEditor-vue.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+msgid "Edit .htaccess"
+msgstr "Edytuj .htaccess"
+
+#: languages/aioseo-lite.php:1115
+#: dist/Lite/assets/js/tools-ImportExport-vue.js:1
+#: dist/Lite/assets/js/tools-partials-ExportSettings-vue.js:1
+msgid "Export Settings"
+msgstr "Eksportuj ustawienia"
+
+#: languages/aioseo-lite.php:344 dist/Lite/assets/js/chunk-common.js:1
+msgid "Activity"
+msgstr "Aktywność"
+
+#: languages/aioseo-lite.php:347 dist/Lite/assets/js/chunk-common.js:1
+msgid "Sport"
+msgstr "Sport"
+
+#: languages/aioseo-lite.php:353 dist/Lite/assets/js/chunk-common.js:1
+msgid "Bar"
+msgstr "Bar"
+
+#: languages/aioseo-lite.php:316
+#: dist/Lite/assets/js/about-lite-LiteVsPro-vue.js:1
+#: dist/Lite/assets/js/about-Main-vue.js:1
+#: dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/sitemaps-lite-NewsSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-lite-VideoSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-NewsSitemapActivate-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemapActivate-vue.js:1
+#: dist/Lite/assets/js/sitemaps-VideoSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps.js:1
+msgid "Video Sitemap"
+msgstr "Mapa filmików"
+
+#: languages/aioseo-lite.php:356 dist/Lite/assets/js/chunk-common.js:1
+msgid "Company"
+msgstr "Firma"
+
+#: languages/aioseo-lite.php:359 dist/Lite/assets/js/chunk-common.js:1
+msgid "Cafe"
+msgstr "Kawiarnia"
+
+#: languages/aioseo-lite.php:362 dist/Lite/assets/js/chunk-common.js:1
+msgid "Hotel"
+msgstr "Hotel"
+
+#. Translators: This refers to a charity/non-profit organization.
+#: languages/aioseo-lite.php:372 dist/Lite/assets/js/chunk-common.js:1
+msgid "Cause"
+msgstr "Przyczyna "
+
+#: languages/aioseo-lite.php:375 dist/Lite/assets/js/chunk-common.js:1
+msgid "Sports League"
+msgstr "Liga Sportowa"
+
+#: languages/aioseo-lite.php:378 dist/Lite/assets/js/chunk-common.js:1
+msgid "Sports Team"
+msgstr "Drużyna Sportowa"
+
+#. Translators: This refers to a music group.
+#: languages/aioseo-lite.php:385 dist/Lite/assets/js/chunk-common.js:1
+msgid "Band"
+msgstr "Zespół"
+
+#: languages/aioseo-lite.php:391 dist/Lite/assets/js/chunk-common.js:1
+msgid "School"
+msgstr "Szkoła"
+
+#: languages/aioseo-lite.php:394 dist/Lite/assets/js/chunk-common.js:1
+msgid "University"
+msgstr "Uniwersytet "
+
+#: languages/aioseo-lite.php:400 dist/Lite/assets/js/chunk-common.js:1
+msgid "Actor"
+msgstr "Aktor"
+
+#: languages/aioseo-lite.php:403 dist/Lite/assets/js/chunk-common.js:1
+msgid "Athlete"
+msgstr "Sportowiec"
+
+#: languages/aioseo-lite.php:409 dist/Lite/assets/js/chunk-common.js:1
+msgid "Director"
+msgstr "Reżyser"
+
+#: languages/aioseo-lite.php:412 dist/Lite/assets/js/chunk-common.js:1
+msgid "Musician"
+msgstr "Muzyk"
+
+#: languages/aioseo-lite.php:415 dist/Lite/assets/js/chunk-common.js:1
+msgid "Politician"
+msgstr "Polityk"
+
+#: languages/aioseo-lite.php:418 dist/Lite/assets/js/chunk-common.js:1
+msgid "Profile"
+msgstr "Profil"
+
+#: languages/aioseo-lite.php:421 dist/Lite/assets/js/chunk-common.js:1
+msgid "Public Figure"
+msgstr "Osoba Publiczna"
+
+#: languages/aioseo-lite.php:427 dist/Lite/assets/js/chunk-common.js:1
+msgid "City"
+msgstr "Miasto"
+
+#: languages/aioseo-lite.php:433 dist/Lite/assets/js/chunk-common.js:1
+msgid "Landmark"
+msgstr "Punkt orientacyjny"
+
+#: languages/aioseo-lite.php:442 dist/Lite/assets/js/chunk-common.js:1
+msgid "Album"
+msgstr "Album"
+
+#: languages/aioseo-lite.php:445 dist/Lite/assets/js/chunk-common.js:1
+msgid "Book"
+msgstr "Książka"
+
+#: languages/aioseo-lite.php:448 dist/Lite/assets/js/chunk-common.js:1
+msgid "Drink"
+msgstr "Napój"
+
+#: languages/aioseo-lite.php:451 dist/Lite/assets/js/chunk-common.js:1
+msgid "Food"
+msgstr "Jedzenie"
+
+#: languages/aioseo-lite.php:454 dist/Lite/assets/js/chunk-common.js:1
+msgid "Game"
+msgstr "Gra"
+
+#: languages/aioseo-lite.php:457 dist/Lite/assets/js/chunk-common.js:1
+msgid "Movie"
+msgstr "Film"
+
+#: languages/aioseo-lite.php:460 languages/aioseo-pro.php:157
+#: dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/search-appearance-partials-pro-Schema-vue.js:1
+msgid "Product"
+msgstr "Produkt"
+
+#: languages/aioseo-lite.php:463 dist/Lite/assets/js/chunk-common.js:1
+msgid "Song"
+msgstr "Piosenka"
+
+#: languages/aioseo-lite.php:466 dist/Lite/assets/js/chunk-common.js:1
+msgid "TV Show"
+msgstr "Program telewizyjny"
+
+#: languages/aioseo-lite.php:469 dist/Lite/assets/js/chunk-common.js:1
+msgid "Episode"
+msgstr "Odcinek"
+
+#: languages/aioseo-lite.php:476 languages/aioseo-pro.php:154
+#: dist/Lite/assets/js/chunk-common.js:1 dist/Lite/assets/js/post-settings.js:1
+#: dist/Lite/assets/js/search-appearance-ContentTypes-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Media-vue.js:1
+#: dist/Lite/assets/js/search-appearance-partials-lite-Schema-vue.js:1
+#: dist/Lite/assets/js/search-appearance-partials-pro-Schema-vue.js:1
+#: dist/Lite/assets/js/search-appearance-partials-Schema-vue.js:1
+msgid "Article"
+msgstr "Artykuł"
+
+#: languages/aioseo-lite.php:2924
+#: dist/Lite/assets/js/settings-Breadcrumbs-vue.js:1
+#: dist/Lite/assets/js/setup-wizard-Category-vue.js:1
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+msgid "Blog"
+msgstr "Blog"
+
+#: languages/aioseo-lite.php:2538
+#: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+msgid "Site Name"
+msgstr "Nazwa Strony"
+
+#: languages/aioseo-lite.php:1901 dist/Lite/assets/js/chunk-common.js:1
+msgid "Post Author Image"
+msgstr "Postuj Obraz Autora"
+
+#: languages/aioseo-lite.php:1904 dist/Lite/assets/js/chunk-common.js:1
+msgid "First Available Image"
+msgstr "Pierwszy Dostępny Obraz"
+
+#: languages/aioseo-lite.php:5445 dist/Lite/assets/js/post-settings.js:1
+msgid "Twitter Card Type"
+msgstr "Rodzaj Karty Twitter"
+
+#: languages/aioseo-lite.php:4877
+#: dist/Lite/assets/js/social-networks-Main-vue.js:1
+#: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
+msgid "Show Twitter Author"
+msgstr "Pokaż Autora Twitter"
+
+#: languages/aioseo-lite.php:2614
+#: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+msgid "Automatically Generate Article Tags"
+msgstr "Automatycznie Generuj Tagi Artykułu"
+
+#: languages/aioseo-lite.php:5415 dist/Lite/assets/js/post-settings.js:1
+msgid "Article Section"
+msgstr "Sekcja Artykułu"
+
+#: languages/aioseo-lite.php:5418 dist/Lite/assets/js/post-settings.js:1
+msgid "Article Tags"
+msgstr "Tagi Artykułu"
+
+#: languages/aioseo-lite.php:1130
+#: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Main-vue.js:1
+#: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+msgid "Person"
+msgstr "Osoba"
+
+#: languages/aioseo-lite.php:1133
+#: dist/Lite/assets/js/search-appearance-GlobalSettings-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Main-vue.js:1
+#: dist/Lite/assets/js/setup-wizard-AdditionalInformation-vue.js:1
+#: dist/Lite/assets/js/setup-wizard-Main-vue.js:1
+msgid "Organization"
+msgstr "Organizacja"
+
+#: languages/aioseo-pro.php:404
+msgid "Social Settings"
+msgstr "Ustawienia Społecznościowe"
+
+#: languages/aioseo-lite.php:2630 dist/Lite/assets/js/post-settings.js:1
+#: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+msgid "Object Type"
+msgstr "Typ Obiektu"
+
+#: app/Common/Tools/SystemStatus.php:81
+msgid "Multisite"
+msgstr "Multistrona"
+
+#: app/Common/Tools/SystemStatus.php:208
+msgid "PHP Max Upload Size"
+msgstr "Maksymalny Rozmiar Przesyłania PHP"
+
+#: app/Common/Tools/SystemStatus.php:212
+msgid "PHP Max Post Size"
+msgstr "Maksymalny Rozmiar Postu PHP"
+
+#: languages/aioseo-lite.php:1889 dist/Lite/assets/js/chunk-common.js:1
+msgid "Featured Image"
+msgstr "Obrazek wyróżniający"
+
+#: languages/aioseo-lite.php:1727 dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/local-seo-lite-Locations-vue.js:1
+#: dist/Lite/assets/js/local-seo-Locations-vue.js:1
+#: dist/Lite/assets/js/local-seo-OpeningHours-vue.js:1
+#: dist/Lite/assets/js/local-seo-pro-LocalSeoCta-vue.js:1
+#: dist/Lite/assets/js/local-seo-pro-Locations-vue.js:1
+#: dist/Lite/assets/js/local-seo-pro-LocationsActivate-vue.js:1
+#: dist/Lite/assets/js/local-seo-pro-LocationsBusinessInfo-vue.js:1
+#: dist/Lite/assets/js/local-seo-pro-OpeningHoursActivate-vue.js:1
+#: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+msgid "Image"
+msgstr "Obrazek"
+
+#: languages/aioseo-lite.php:4801 dist/Lite/assets/js/posts-table.js:1
+msgid "Please wait..."
+msgstr "Proszę czekać…"
+
+#: app/Common/Tools/SystemStatus.php:245 languages/aioseo-lite.php:831
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-SystemStatus-vue.js:1
+msgid "Active Theme"
+msgstr "Aktualnie używany motyw"
+
+#: app/Common/Tools/SystemStatus.php:73
+msgid "Site URL"
+msgstr "Adres URL witryny"
+
+#: languages/aioseo-lite.php:224
+#: dist/Lite/assets/js/redirects-ImportExport-vue.js:1
+#: dist/Lite/assets/js/redirects-partials-ImportAioseo-vue.js:1
+#: dist/Lite/assets/js/redirects-partials-ImportOthers-vue.js:1
+#: dist/Lite/assets/js/setup-wizard.js:1
+#: dist/Lite/assets/js/tools-ImportExport-vue.js:1
+#: dist/Lite/assets/js/tools-partials-ImportAioseo-vue.js:1
+#: dist/Lite/assets/js/tools-partials-ImportOthers-vue.js:1
+msgid "Import"
+msgstr "Import"
+
+#: languages/aioseo-lite.php:822 dist/Lite/assets/js/link-format-block.js:6
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+#: dist/Lite/assets/js/tools-SystemStatus-vue.js:1
+msgid "Submit"
+msgstr "Dodaj opinię"
+
+#: languages/aioseo-lite.php:430 dist/Lite/assets/js/chunk-common.js:1
+msgid "Country"
+msgstr "Kraj"
+
+#: languages/aioseo-lite.php:4853 dist/Lite/assets/js/post-settings.js:1
+#: dist/Lite/assets/js/social-networks-Main-vue.js:1
+#: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
+msgid "Summary"
+msgstr "Podsumowanie"
+
+#: languages/aioseo-lite.php:983 dist/Lite/assets/js/link-format-block.js:6
+#: dist/Lite/assets/js/posts-table.js:1
+#: dist/Lite/assets/js/redirects-pro-Redirects-vue.js:1
+msgid "Edit"
+msgstr "Edytuj"
+
+#: app/Common/Tools/SystemStatus.php:69
+msgid "Home URL"
+msgstr "Adres URL strony głównej"
+
+#: app/Common/Tools/SystemStatus.php:185 languages/aioseo-lite.php:98
+#: dist/Lite/assets/js/post-settings.js:1
+msgid "N/A"
+msgstr "Brak danych"
+
+#: languages/aioseo-lite.php:135 dist/Lite/assets/js/tools.js:1
+msgid "System Status"
+msgstr "Status systemu"
+
+#: languages/aioseo-lite.php:479 dist/Lite/assets/js/chunk-common.js:1
+msgid "Website"
+msgstr "Witryna internetowa"
+
+#: languages/aioseo-lite.php:1910 dist/Lite/assets/js/chunk-common.js:1
+msgid "Custom Image"
+msgstr "Własny obrazek"
+
+#: languages/aioseo-lite.php:365 dist/Lite/assets/js/chunk-common.js:1
+msgid "Restaurant"
+msgstr "Restauracja"
+
+#. Translators: This is an action link users can click to open our premium
+#. support.
+#: app/Lite/Main/Filters.php:54 languages/aioseo-lite.php:2670
+#: dist/Lite/assets/js/dashboard-Main-vue.js:1
+msgid "Support"
+msgstr "Wsparcie"
+
+#: languages/aioseo-lite.php:2567 languages/aioseo-pro.php:41
+#: dist/Lite/assets/js/chunk-common.js:1
+#: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Main-vue.js:1
+#: dist/Lite/assets/js/settings-Advanced-vue.js:1
+#: dist/Lite/assets/js/settings-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-GeneralSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-Main-vue.js:1
+#: dist/Lite/assets/js/sitemaps-NewsSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-NewsSitemap-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-NewsSitemapActivate-vue.js:1
+#: dist/Lite/assets/js/sitemaps-pro-VideoSitemap-vue.js:1
+#: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+msgid "Advanced Settings"
+msgstr "Ustawienia zaawansowane"
+
+#: app/Common/Admin/Admin.php:253 app/Common/Models/Post.php:209
+#: languages/aioseo-lite.php:2542 dist/Lite/assets/js/post-settings.js:1
+#: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+msgid "Title"
+msgstr "Tytuł"
+
+#: app/Common/Utils/Tags.php:521 languages/aioseo-lite.php:2554
+#: languages/aioseo-pro.php:258
+#: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+#: dist/Lite/assets/js/social-networks-Main-vue.js:1
+#: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
+msgid "Description"
+msgstr "Opis"
+
+#: languages/aioseo-lite.php:5120
+#: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Main-vue.js:1
+msgid "Description Format"
+msgstr "Format opisu:"
+
+#: languages/aioseo-lite.php:27 dist/Lite/assets/js/chunk-common.js:1
+msgid "Display Settings"
+msgstr "Ustawienia wyświetlania"
+
+#: app/Common/Tools/SystemStatus.php:129 app/Common/Tools/SystemStatus.php:133
+#: app/Common/Tools/SystemStatus.php:137 app/Common/Tools/SystemStatus.php:141
+#: app/Common/Tools/SystemStatus.php:145 app/Common/Tools/SystemStatus.php:149
+#: app/Common/Tools/SystemStatus.php:153 languages/aioseo-lite.php:693
+#: dist/Lite/assets/js/chunk-common.js:1
+msgid "Disabled"
+msgstr "Wyłączono"
+
+#: languages/aioseo-lite.php:2528
+#: dist/Lite/assets/js/social-networks-Facebook-vue.js:1
+#: dist/Lite/assets/js/social-networks-Main-vue.js:1
+#: dist/Lite/assets/js/social-networks-Twitter-vue.js:1
+msgid "Home Page Settings"
+msgstr "Ustawienia strony głównej"
+
+#: languages/aioseo-lite.php:696 dist/Lite/assets/js/chunk-common.js:1
+msgid "Enabled"
+msgstr "Włączono"
+
+#: languages/aioseo-lite.php:5102
+#: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Main-vue.js:1
+msgid "Check this if you want your categories for a given post used as the Meta Keywords for this post (in addition to any keywords you specify on the Edit Post screen)."
+msgstr "Zaznacz tą opcję, jeśli chcesz używać swoich kategorii jako Meta Słów Kluczowych dla danego postu (oprócz innych słów kluczowych określonych w ekranie Edytuj Post)."
+
+#: languages/aioseo-lite.php:5108
+#: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Main-vue.js:1
+msgid "Check this if you want your tags for a given post used as the Meta Keywords for this post (in addition to any keywords you specify on the Edit Post screen)."
+msgstr "Zaznacz tą opcję, jeśli chcesz używać swoich tagów jako Meta Słów Kluczowych dla danego postu (oprócz innych słów kluczowych określonych w ekranie Edytuj Post)."
+
+#: languages/aioseo-lite.php:5096
+#: dist/Lite/assets/js/search-appearance-Advanced-vue.js:1
+#: dist/Lite/assets/js/search-appearance-Main-vue.js:1
+msgid "This option allows you to toggle the use of Meta Keywords throughout the whole of the site."
+msgstr "Ta opcja pozwala na włączenie używania Meta Słów Kluczowych na całej stronie."
+
+#: languages/aioseo-lite.php:126
+#: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
+#: dist/Lite/assets/js/tools-DatabaseTools-vue.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1 dist/Lite/assets/js/tools.js:1
+msgid "Bad Bot Blocker"
+msgstr "Blokada Bad Bot"
+
+#: languages/aioseo-lite.php:724
+#: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+msgid "Track Blocked Bots"
+msgstr "Śledź Zablokowane Boty."
+
+#: languages/aioseo-lite.php:730
+#: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+msgid "User Agent Blocklist"
+msgstr "Blocklista Agentów Użytkownika"
+
+#: languages/aioseo-lite.php:733
+#: dist/Lite/assets/js/tools-BadBotBlocker-vue.js:1
+#: dist/Lite/assets/js/tools-Main-vue.js:1
+msgid "Referer Blocklist"
+msgstr "Blocklista Referencji"
+
+#: app/Common/Admin/Admin.php:73 languages/aioseo-lite.php:45
+#: languages/aioseo-pro.php:371 dist/Lite/assets/js/settings-Main-vue.js:1
+#: dist/Lite/assets/js/settings.js:1
+msgid "General Settings"
+msgstr "Ustawienia ogólne"

@@ -1,0 +1,31 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@header : #003262;
+
+.pa-video-popup {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 25px;
+        color: @header;
+    }
+    &__content {
+        text-align: center;
+    }
+    &__btn {
+        margin-top: 25px;
+        text-align: center;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,95 @@
+# Translation of Plugins - ACF Field For Contact Form 7 - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - ACF Field For Contact Form 7 - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-07-09 13:29:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - ACF Field For Contact Form 7 - Stable (latest release)\n"
+
+#: includes/class-acf-field-for-contact-form-7.php:41
+msgid "This website needs \"%s\" to run. Please download and activate it"
+msgstr "このウェブサイトを実行するには \"%s\"が必要です。 ダウンロードして起動してください"
+
+#. Author of the plugin
+msgid "KrishaWeb"
+msgstr "KrishaWeb"
+
+#. Author URI of the plugin
+msgid "https://www.krishaweb.com/"
+msgstr "https://www.krishaweb.com/"
+
+#: includes/acf-fields/acf-contact-form-7-v5.php:38
+msgid "Select form"
+msgstr "フォームを選択"
+
+#: includes/acf-fields/acf-contact-form-7-v5.php:24
+msgid "Contact form 7"
+msgstr "Contact form 7"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:246
+msgid "Select Multiple?"
+msgstr "複数選択しますか？"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:237
+#: includes/acf-fields/acf-contact-form-7-v4.php:256
+#: includes/acf-fields/acf-contact-form-7-v4.php:275
+msgid "No"
+msgstr "いいえ"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:236
+#: includes/acf-fields/acf-contact-form-7-v4.php:255
+#: includes/acf-fields/acf-contact-form-7-v4.php:274
+msgid "Yes"
+msgstr "はい"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:200
+msgid "You will not be able to select these forms"
+msgstr "これらのフォームを選択することはできません"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:199
+msgid "Disabled Forms:"
+msgstr "無効なフォーム"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:265
+#: includes/acf-fields/acf-contact-form-7-v3.php:99
+msgid "Hide disabled forms?"
+msgstr "無効なフォームを非表示にしますか？"
+
+#: includes/acf-fields/acf-contact-form-7-v3.php:80
+msgid "Select multiple forms?"
+msgstr "複数のフォームを選択しますか？"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:227
+#: includes/acf-fields/acf-contact-form-7-v3.php:61
+msgid "Allow Null?"
+msgstr "ヌルを許可します？"
+
+#: includes/acf-fields/acf-contact-form-7-v3.php:34
+msgid "You can not select these forms"
+msgstr "これらのフォームは選択できません"
+
+#: includes/acf-fields/acf-contact-form-7-v3.php:33
+msgid "Disabled forms:"
+msgstr "無効なフォーム"
+
+#: includes/acf-fields/acf-contact-form-7-v4.php:12
+#: includes/acf-fields/acf-contact-form-7-v3.php:16
+msgid "Contact Form 7"
+msgstr "Contact Form 7"
+
+#. Plugin Name of the plugin
+msgid "ACF Field For Contact Form 7"
+msgstr "ACF Field For Contact Form 7"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/acf-field-for-contact-form-7/"
+msgstr "https://wordpress.org/plugins/acf-field-for-contact-form-7/"
+
+#. Description of the plugin
+msgid "Adds a new 'Contact Form 7' field to the popular Advanced Custom Fields plugin."
+msgstr "人気のあるAdvanced Custom Fieldsプラグインに新しい「Contact Form 7」フィールドを追加します。"

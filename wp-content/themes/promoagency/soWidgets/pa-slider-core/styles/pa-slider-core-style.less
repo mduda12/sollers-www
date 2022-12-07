@@ -1,0 +1,120 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-slider-core {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+}
+
+.pa-slider-core {
+
+    &__header {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__wrap {
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        text-align: center;
+
+        &__image {
+            margin-bottom: 15px;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__numbers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        &__item {
+            flex-grow: 1;
+            flex-basis: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            @media @lg-max {
+                flex-basis: 50%;
+                margin-bottom: 40px;
+                justify-content: flex-start;
+            }
+
+            @media @md-max {
+                flex-basis: 100%;
+
+                &__value {
+                    width: 50%;
+                }
+
+                &__text {
+                    width: 50%;
+                }
+
+            }
+
+
+            &__value {
+                font-size: @font-46;
+                color: @color-text-green;
+                .font-medium();
+                padding-right: 15px;
+                border-right: 1px solid @color-text-blue-dark;
+
+                @media @lg-max {
+                    max-width: 150px;
+                    width: 100%;
+                    text-align: right;
+                }
+
+                @media @md-max {
+                    max-width: none;
+                    width: 46%;
+                    text-align: right;
+                }
+            }
+
+            &__text {
+                text-align: left;
+                padding-left: 15px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+}

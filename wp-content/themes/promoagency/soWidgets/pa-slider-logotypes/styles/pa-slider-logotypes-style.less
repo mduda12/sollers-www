@@ -1,0 +1,118 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #e9ecf3;
+
+.pa-slider-logotypes {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__nav {
+        @media @md {
+            display: none;
+        }
+        ul {
+             li {
+                 padding: 15px;
+                 cursor: pointer;
+                 list-style: none;
+                 background: none;
+                 display: inline-block;
+                 position: absolute;
+                 top: 55%;
+                 z-index: 100;
+                 &.slider-logotypes-prev {
+                     left:15px;
+                 }
+                 &.slider-logotypes-next {
+                     right:15px;
+                 }
+             }
+        } 
+     }
+    &__header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__box {
+        img {
+            filter: grayscale(100%);
+            .transition(all, 0.5s, ease);
+            opacity: 0.5;
+            max-width: 100%;
+            &:hover {
+                filter: grayscale(0); 
+                opacity: 1;
+            }
+        }
+        .transition(all, 0.5s, ease);
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    //FIT TO GRID 1110
+    .slick-slide {
+        margin: 0 20px;
+    }
+    .slick-list {
+        margin: 0 -20px;
+    }
+
+    .so-panel.widget & ul {
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+        margin-top: 30px;
+        li {
+            display: inline-block;
+            background: none;
+            padding-left: 0;
+            button {
+                background: 0;
+                background-repeat: no-repeat;
+                text-indent: -9999px;
+                overflow:hidden;
+                width: 60px;
+                .transition(all, 0.5s, ease);
+                margin: 0 8px;
+                border: 0;
+                outline: none;
+                padding: 0;
+                height: 4px;
+                border-top: 2px solid transparent;
+                border-bottom: 2px solid @color-bg-nav-gray;
+            }
+            &.slick-active {
+                button {
+                    height: 4px;
+                    border-top: 2px solid @color-bg-nav-green;
+                    border-bottom: 2px solid @color-bg-nav-green;
+                }
+            }
+        }
+    }
+}

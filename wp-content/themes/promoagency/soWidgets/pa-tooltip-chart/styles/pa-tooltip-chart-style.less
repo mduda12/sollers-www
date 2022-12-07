@@ -1,0 +1,220 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #edf2f6;
+
+.pa-tooltip-chart {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+
+    &__col {
+
+        &--left {
+            padding-right: 20px;
+
+            @media @md-max {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .pa-widget__subheader {
+        line-height: 1.75;
+
+        ul {
+            padding: 0;
+            list-style: none;
+            margin: 20px 0;
+
+            li {
+                padding-left: 40px;
+                font-size: @font-18;
+                background: url(/wp-content/themes/promoagency/dist/img/chart-list-icon.png) left top 2px no-repeat;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+        &__header {
+            .font-light();
+            font-size: @font-30;
+        }
+
+        &__subheader {
+            font-size: @font-14;
+        }
+    }
+
+    &__image {
+
+        &__wrap {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__item {
+            position: relative;
+        }
+
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+
+        &__header {
+            .font-light();
+            font-size: @font-30;
+        }
+
+        &__subheader {
+            font-size: @font-14;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        
+        button {
+            border: 2px solid rgb(0, 68, 136);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            outline: none;
+            background-color: #fff;
+            background-image: url(/wp-content/themes/promoagency/dist/img/tooltip-plus-minus.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: left center;
+            .transition(box-shadow, 0.2s, ease-in-out);
+            display: block;
+            position: relative;
+
+            .pa-tooltip-chart-text {
+                position: absolute;
+                width: 50px;
+                height: auto;
+                left: -61px;
+                top: 58px;
+                background-color: #fff;
+                box-shadow: 0px 10px 20px 0px rgba(176, 188, 212, 0.7);
+                width: 160px;
+                padding: 15px;
+                border-radius: 10px;
+                color: @color-text-blue-dark;
+                font-size: @font-14;
+                z-index: 5;
+                opacity: 0;
+                cursor: default;
+                pointer-events: none;
+                .transition();
+
+                &.active {
+                    opacity: 1;
+                    .transition(0.4s);
+                }
+
+                &--arrow {
+                    position: absolute;
+                    top: -16px;
+                    left: 50%;
+                    margin-left: -11.5px;
+
+                    @media @md-max {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &.active {
+
+            button {
+                box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.38);
+                background-image: url(/wp-content/themes/promoagency/dist/img/tooltip-plus-minus.png);
+                background-position: left -34px top 5px;
+                .transition(box-shadow, 0.2s, ease-in-out);
+            }
+        }
+
+        &--one {
+            left: -19px;
+            top: 50%;
+            margin-top: -19px;
+
+            @media @md-max {
+                left: 0;
+            }
+
+            button {
+
+                .pa-tooltip-chart-text {
+
+                    @media @md-max {
+                        left: 0;
+                    }
+                }
+
+            }
+        }
+
+        &--two {
+            right: -19px;
+            top: 50%;
+            margin-top: -19px;
+
+            @media @md-max {
+                right: 0;
+            }
+
+            button {
+
+                .pa-tooltip-chart-text {
+
+                    @media @md-max {
+                        left: -120px;
+                    }
+                }
+
+            }
+        }
+
+        &--three {
+            left: 50%;
+            margin-left: -19px;
+            bottom: -19px;
+
+            @media @md-max {
+                bottom: 0;
+            }
+        }
+    }
+}

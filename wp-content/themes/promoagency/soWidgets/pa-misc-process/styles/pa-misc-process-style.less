@@ -1,0 +1,100 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-misc-process {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__intro {
+        margin-bottom: 20px;
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        a {
+            .font-medium;
+            color: @color-text-blue-dark;
+            text-decoration: underline;
+        }
+    }
+    &__chart {
+        text-align: center;
+        position: relative;
+        max-width: 850px;
+        margin: 0 auto;
+        img {
+            max-width: 100%;
+            &.desktop {
+                @media @md-max {
+                    display: none;
+                }
+            }
+            &.mobile {
+                @media @md {
+                    display: none;
+                }
+            }
+        }
+        span {
+            position: absolute;
+            .transition(all, 0.5s, ease);
+            font-size: @font-18;
+            border-bottom: 2px solid @color-bg-nav-gray;
+            &:hover {
+                color: #9cc85d;
+            }
+            @media @md-max {
+                display: none;
+            }
+            &.point-1 {
+                width: 310px;
+                text-align: right;
+                top:35px;
+                right:0;
+            }
+            &.point-2 {
+                width: 188px;
+                text-align: left;
+                top:190px;
+                left:0;
+            }
+            &.point-3 {
+                width: 188px;
+                text-align: right;
+                top:190px;
+                right:0;
+            }
+            &.point-4 {
+                width: 300px;
+                text-align: left;
+                bottom:70px;
+                left:0;
+            }
+        }
+    }
+}

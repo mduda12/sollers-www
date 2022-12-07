@@ -1,0 +1,29 @@
+# ignore all files starting with .
+.*
+
+# ignore all files that start with ~
+~*
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# igonre uploads
+wp-content/uploads/*
+wp-content/wflogs/*
+wp-content/cache/*
+wp-content/wpo-cache/*
+
+# INCLUDE/TRACK .gitignore
+!.gitignore

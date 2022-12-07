@@ -1,0 +1,110 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 40px;
+@widget_padding_bottom : 40px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+@box_one_bg : #c9b19b;
+@box_two_bg : #544741;
+@box_three_bg : #edf2f6;
+@box_four_bg : #ffb533;
+
+.pa-box-steps {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 25px;
+        .header {
+            .font-regular;
+        }
+    }
+    &__subheader {
+        margin-bottom: 40px;
+    }
+    &__footer {
+        margin-top: 10px;
+    }
+    &__box {
+        padding: 25px 20px 40px 20px;
+        .transition(all, 0.5s, ease);
+        position: relative;
+        margin-bottom: 30px;
+        &:after {
+            content: "";
+            display: block;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            top:50px;
+            right: -12px;
+            transform: rotate(45deg);
+            @media @sm-max {
+                display: none;
+            }
+        }
+        img {
+            margin-bottom: 15px;
+            display: block;
+            &.aligncenter {
+                margin: 0 auto;
+                margin-bottom: 15px;
+            }
+        }
+        .title {
+            font-size: @font-32;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            p {
+                margin-bottom: 0;
+            }
+        }
+        &.box-one {
+            background: @box_one_bg;
+            &:after {
+                background: @box_one_bg;
+            }
+        }
+        &.box-two {
+            background: @box_two_bg;
+            &:after {
+                background: @box_two_bg;
+            }
+        }
+        &.box-three {
+            background: @box_three_bg;
+            &:after {
+                background: @box_three_bg;
+            }
+        }
+        &.box-four {
+            background: @box_four_bg;
+        }
+        &:hover {
+            box-shadow: 0px 15px 25px 0px rgba(6, 65, 123, 0.1);
+        }
+    }
+}
+  

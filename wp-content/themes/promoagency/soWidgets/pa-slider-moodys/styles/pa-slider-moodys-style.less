@@ -1,0 +1,112 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-slider-moodys {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__nav {
+        position: absolute;
+        left:0;
+        top:0;
+        z-index:10;
+    }
+    &__image {
+        img {
+            max-width: 100%;
+            &.one {
+                float: left;
+            }
+            &.second {
+                float: right;
+                margin-top: 80px;
+            }
+        }
+    }
+    &__description {
+        margin-top: 80px;
+        @media @lg-max { 
+            margin-bottom: 40px;
+        }
+        header {
+            margin-bottom: 35px;
+        }
+        .content {
+            ul {
+                padding-left: 0;
+                list-style: none;
+                margin-bottom: 0;
+                li {
+                    padding: 14px 40px;
+                    background: url(/wp-content/themes/promoagency/dist/img/ul-icon.png);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    .font-medium;
+                    color: @color-text-green;
+                    font-size: @font-20;
+                }
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+        .so-panel.widget & ul.slick-dots {
+            padding-left: 0;
+            list-style: none;
+            text-align: center;
+            margin-top: 45px;
+            li {
+                display: inline-block;
+                background: none;
+                padding-left: 0;
+                button {
+                    background: 0;
+                    background-repeat: no-repeat;
+                    text-indent: -9999px;
+                    overflow:hidden;
+                    width: 60px;
+                    .transition(all, 0.5s, ease);
+                    margin: 0 8px;
+                    border: 0;
+                    outline: none;
+                    padding: 0;
+                    height: 4px;
+                    border-top: 2px solid transparent;
+                    border-bottom: 2px solid @color-bg-nav-gray;
+                }
+                &.slick-active {
+                    button {
+                        height: 4px;
+                        border-top: 2px solid @color-bg-nav-green;
+                        border-bottom: 2px solid @color-bg-nav-green;
+                    }
+                }
+            }
+        }
+    }
+}

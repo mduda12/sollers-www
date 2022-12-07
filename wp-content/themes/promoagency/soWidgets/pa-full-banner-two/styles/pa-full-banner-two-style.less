@@ -1,0 +1,87 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+
+.pa-full-banner-two {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(/wp-content/themes/promoagency/dist/img/one-two-banner-bg.png);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media @xl-max {
+        background-position: left -300px 0;
+    }
+
+    @media @lg-max {
+        background-image: none;
+    }
+
+    &__left {
+        background-color: #9cc85d;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        &__image {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 20px;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        &__number {
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+            color: #fff;
+            font-size: @font-50;
+            .font-medium();
+        }
+
+        &__text {
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+            color: #fff;
+            font-size: @font-18;
+            letter-spacing: 2px;
+            .font-medium();
+        }
+        
+        
+    }
+
+    &__right {
+        background-color: #edf2f6;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        &__desc {
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: @font-18;
+            line-height: 1.445;
+        }
+    }
+}

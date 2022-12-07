@@ -1,0 +1,61 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+// Variables
+
+.pa-content {
+
+    &__header {
+
+        &__container {
+            height: 333px;
+            background-size: auto;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            @media @xxl {
+                background-size: cover;
+            }
+
+            @media @xl-max {
+                background-size: auto;
+                background-position: left center;
+            }
+        }
+
+        &__wrap {
+            display: flex;
+            align-items: center;
+            height: 333px;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &__text {
+            color: #fff;
+            &.rife {
+                .font-rife; 
+            }
+        }
+
+        &--mobile {
+            display: none;
+
+            @media @xl-max {
+                display: block;
+            }
+        }
+
+        &--desktop {
+            
+            @media @xl-max {
+                display: none;
+            }
+        }
+    }
+    &__subheader {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-txt-header-bg-universal {
+    background-color: @bg_color;
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+        &.pa-alternative {
+            background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left-alternative.png);
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+        &.pa-alternative {
+            background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right-alternative.png);
+        }
+    }
+    &__header {
+        margin-bottom: 30px;
+    }
+    &__wrapper {
+        padding-top: @widget_padding_top;
+        padding-bottom: @widget_padding_bottom;
+        @media @sm-max { 
+            padding-top: calc( @widget_padding_top / 2 );
+            padding-bottom: calc( @widget_padding_bottom / 2 );
+        }
+        &.background {
+            background: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/pa-txt-header-img-bg.png) center bottom no-repeat;
+            @media @sm-max { 
+                background: none;
+            }
+        }
+        &.background-alternative {
+            background: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/pa-txt-header-img-bg-alternative.png) center bottom no-repeat;
+            @media @sm-max { 
+                background: none;
+            }
+        }
+    }
+}

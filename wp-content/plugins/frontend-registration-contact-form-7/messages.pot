@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-06 12:24+0200\n"
+"PO-Revision-Date: 2020-04-06 12:26+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: frontend-registration-cf7.php:48
+msgid "Registration Settings"
+msgstr "Ustawienia rejestracji"
+
+#: frontend-registration-cf7.php:64
+msgid "PRO Version"
+msgstr "Wersja PRO"
+
+#: frontend-registration-cf7.php:65
+msgid "More Plugins by David Pokorny"
+msgstr "Więcej wtyczek tego autora"
+
+#: frontend-registration-opt-cf7.php:80
+#, php-format
+msgid "Username: %s"
+msgstr "Nazwa użytkownika %s"
+
+#: frontend-registration-opt-cf7.php:81
+#, php-format
+msgid "Password: %s"
+msgstr "Hasło %s"
+
+#: frontend-registration-opt-cf7.php:83
+#, php-format
+msgid "[%s] Your username and password"
+msgstr "[%s] Twoja nazwa użytkownika oraz hasło"

@@ -1,0 +1,45 @@
+<?php if( have_rows('customers_hp_logo') ): ?>
+<section class="customers">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="customers__header">
+                    <h2 class="header homepage padding-v50"><?php the_field("customers_hp_header"); ?></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="customers__wrapper">
+                    <div class="customers-init">
+                        <?php while( have_rows('customers_hp_logo') ): the_row();
+                            $image = get_sub_field('customers_hp_logo_image');
+			    $link_customer = get_sub_field('link_to_customer_site');
+                        ?>
+                            <aside class="customers__box">
+				<a href="<?php echo $link_customer   ?> " > <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                               
+                            </aside>
+                        <?php endwhile; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+            <?php
+                $link = get_field('customers_hp_button');
+                if( $link ):
+                    $link_url = $link['url'];
+                    $link_title = $link['title'];
+                    $link_target = $link['target'] ? $link['target'] : '_self';
+            ?>
+                <div class="customers__button">
+                    <a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>" class="btn btn-default"><span><?php echo esc_html( $link_title ); ?></span></a>
+                </div>
+            <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</section>
+<?php endif; ?>

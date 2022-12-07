@@ -1,0 +1,128 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 125px;
+@widget_padding_bottom : 25px;
+@bg_offset : 0;
+@bg_color : #004888;
+
+.pa-quote {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        padding-bottom: 50px;
+        .quote-before {
+            width: 188px;
+            height: 37px;   
+            position: absolute;
+            left:90px;
+            top:-65px;
+            background: @color-blue;
+            display: block;
+            text-align: right;
+            padding-right: 15px;
+            img {
+                margin-top: -22px;
+            }
+            @media @sm-max { 
+                left:0
+            }
+        }
+        .quote-after {
+            content: '';
+            width: 188px;
+            height: 37px;   
+            position: absolute;
+            right:90px;
+            bottom:-17px;
+            background: @color-blue;
+            display: block;
+            @media @sm-max { 
+                right:0
+            }
+        }
+    }
+    &__data {
+        .quote {
+            font-size: @font-22;
+        }
+        .description {
+            font-size: @font-14;
+            margin-top: 10px;
+        }
+        .author-image {
+            width: 140px;
+            height: 140px;  
+            margin: 25px auto 0 auto; 
+            border-style: solid;
+            border-width: 7px;
+            border-color: #366d9f;
+            border-radius: 50%;
+            img {
+                max-width: 100%;
+                border-radius: 50%;
+            }          
+        }
+        .author {
+            font-size: @font-14;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+        .position {
+            font-size: @font-14;
+            font-style: italic;
+        }
+    }
+    .so-panel.widget & ul.slick-dots {
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+        margin: 40px 0 0 0;
+        li {
+            display: inline-block;
+            background: none;
+            padding-left: 0;
+            margin-bottom: 0;
+            button {
+                background: 0;
+                background-repeat: no-repeat;
+                text-indent: -9999px;
+                overflow:hidden;
+                width: 60px;
+                .transition(all, 0.5s, ease);
+                margin: 0 8px;
+                border: 0;
+                outline: none;
+                padding: 0;
+                height: 4px;
+                border-top: 2px solid transparent;
+                border-bottom: 2px solid @color-blue-light;
+            }
+            &.slick-active {
+                button {
+                    height: 4px;
+                    border-top: 2px solid @color-white;
+                    border-bottom: 2px solid @color-white;
+                }
+            }
+        }
+    }
+}

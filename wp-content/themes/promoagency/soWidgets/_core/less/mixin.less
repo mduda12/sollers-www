@@ -1,0 +1,94 @@
+// FONTS
+.font-light {
+    font-family: neo-sans, sans-serif; 
+    font-weight: 300;
+    font-display: swap;
+}
+.font-regular {
+    font-family: neo-sans, sans-serif; 
+    font-weight: 400;
+    font-display: swap;
+}
+.font-medium {
+    font-family: neo-sans, sans-serif; 
+    font-weight: 500;
+    font-display: swap;
+}
+.font-bold {
+    font-family: neo-sans, sans-serif; 
+    font-weight: 700;
+    font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:900&display=swap&subset=latin-ext');
+.font-rife {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/**
+* TRANSITION
+*
+* div {
+*    .transition(all, 0.5s, ease);
+* }
+*
+*/
+.transition(@what: all, @time: 0.2s, @how: ease-in-out) {
+    -webkit-transition: @what @time @how;
+    -moz-transition:    @what @time @how;
+    -ms-transition:     @what @time @how;
+    -o-transition:      @what @time @how;
+    transition:         @what @time @how;
+}
+
+/**
+* ANIMATION
+*
+* button {
+*    .animation(all, 0.5s, ease);
+* }
+*
+*/
+.animation(@time) {
+    -webkit-animation: fadein @time; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein @time; /* Firefox < 16 */
+     -ms-animation: fadein @time; /* Internet Explorer */
+      -o-animation: fadein @time; /* Opera < 12.1 */
+         animation: fadein @time;
+  }
+  @keyframes fadein { from { opacity: 0; } to   { opacity: 1; } }
+  /* Firefox < 16 */
+  @-moz-keyframes fadein { from { opacity: 0; } to   { opacity: 1; } }
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein { from { opacity: 0; } to   { opacity: 1; } }
+  /* Internet Explorer */
+  @-ms-keyframes fadein { from { opacity: 0; } to   { opacity: 1; } }
+  /* Opera < 12.1 */
+  @-o-keyframes fadein { from { opacity: 0; } to   { opacity: 1; } }
+
+
+/**
+*  RWD
+*
+* .some-class {
+*    color: red;
+*
+*    @media @md {
+*       color: blue;
+*    }
+* }
+*
+*/
+
+@sm : ~"screen and (min-width:  576px)";
+@md : ~"screen and (min-width:  768px)";
+@lg : ~"screen and (min-width:  992px)";
+@xl : ~"screen and (min-width: 1200px)";
+@xxl : ~"screen and (min-width: 1921px)";
+
+@sm-max : ~"screen and (max-width:  575px)";
+@md-max : ~"screen and (max-width:  767px)";
+@lg-max : ~"screen and (max-width:  991px)";
+@xl-max :  ~"screen and (max-width: 1199px)";
+
+@1250-max : ~"screen and (max-width: 1250px)";
+@1400-max : ~"screen and (max-width: 1400px)";

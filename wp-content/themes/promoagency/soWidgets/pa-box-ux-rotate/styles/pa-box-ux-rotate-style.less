@@ -1,0 +1,152 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #edf2f6;
+
+.pa-box-ux-rotate {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__wrapper {
+        margin-top: 25px;
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &__subheader {
+        font-size: @font-18;
+        margin-bottom: 25px;
+    }
+    &__box {
+        position: relative;
+        cursor: pointer;
+        background: @color-white;
+        .transition(all, 0.5s, ease);
+        margin-bottom: 30px;
+        box-shadow: 0px 6px 24px 0px rgba(37, 48, 61, 0.2);
+        &.flipped {
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -ms-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+        }
+    }
+    &__front {
+        z-index:10;
+        position: relative;
+        min-height: 355px;
+        img {
+            position: absolute;
+            top:50%;
+            left:50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+        }
+        &.flipped {
+            display: none;
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -ms-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+        }
+        .line-top {
+            width: 100px;
+            height: 25px;
+            display: block;
+            background: @color-text-green;
+            position: absolute;
+            top: 45px;
+            left:0;
+        }
+        .line-bottom {
+            width: 100px;
+            height: 25px;
+            display: block;
+            background: @color-text-green;
+            position: absolute;
+            bottom: -12px;
+            right:0;
+        }
+        .more {
+            position: absolute;
+            bottom:25px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: @color-text-green;
+            font-size: @font-14;
+            .font-medium;
+        }
+    }
+    &__back {
+        display: none;
+        min-height: 355px;
+        -webkit-transform: rotateY( 0deg );
+        -moz-transform: rotateY( 0deg );
+        -ms-transform: rotateY( 0deg );
+        -o-transform: rotateY( 0deg );
+        transform: rotateY( 0deg );
+        &.flipped {
+            display: block;
+            -webkit-transform: rotateY( 180deg );
+            -moz-transform: rotateY( 180deg );
+            -ms-transform: rotateY( 180deg );
+            -o-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+        }
+        .title {
+            font-size: @font-20;
+            padding: 30px 25px;
+            position: relative;
+            .line {
+                width: 75px;
+                height: 5px;
+                display: block;
+                background: @color-text-green;
+                position: absolute;
+                bottom: 0;
+                left:0;
+            }
+        }
+        .content {
+            font-size: @font-14;
+            padding: 25px;
+        }
+        .back {
+            position: absolute;
+            bottom:25px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: @font-14;
+            .font-medium;
+        }
+    }
+}

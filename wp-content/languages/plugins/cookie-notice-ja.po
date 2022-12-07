@@ -1,0 +1,369 @@
+# Translation of Plugins - Cookie Notice for GDPR - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Cookie Notice for GDPR - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-07-11 13:38:04+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Cookie Notice for GDPR - Stable (latest release)\n"
+
+#: cookie-notice.php:554
+msgid "The text of the privacy policy button."
+msgstr "プライバシーポリシーボタンのテキスト。"
+
+#: cookie-notice.php:745
+msgid "Enter additional button CSS classes separated by spaces."
+msgstr "追加ボタンの CSS クラスをスペースで区切って入力します。"
+
+#: cookie-notice.php:615
+msgid "Select the privacy policy link target."
+msgstr "プライバシーポリシーのリンク先を選択します。"
+
+#: cookie-notice.php:586
+msgid "Synchronize with WordPress Privacy Policy page."
+msgstr "WordPress のプライバシーポリシーページと同期します。"
+
+#: cookie-notice.php:550
+msgid "Enable privacy policy link."
+msgstr "プライバシーポリシーのリンクを有効にする。"
+
+#: cookie-notice.php:508
+msgid "The text of the button to revoke the cookie consent."
+msgstr "Cookie の同意を取り消すボタンのテキスト。"
+
+#: cookie-notice.php:483
+msgid "Body"
+msgstr "ボディ"
+
+#: cookie-notice.php:482
+msgid "Head"
+msgstr "Head"
+
+#: cookie-notice.php:408
+msgid "Button class"
+msgstr "ボタン class"
+
+#: cookie-notice.php:193 cookie-notice.php:395
+msgid "Revoke cookies"
+msgstr "cookie の取り消し"
+
+#: cookie-notice.php:394
+msgid "Refuse cookies"
+msgstr "cookie を拒否する"
+
+#: cookie-notice.php:194 cookie-notice.php:392
+msgid "Privacy policy"
+msgstr "プライバシーポリシー"
+
+#: cookie-notice.php:166
+msgid "An hour"
+msgstr "1時間"
+
+#: cookie-notice.php:147
+msgid "Manual"
+msgstr "手動"
+
+#: cookie-notice.php:146
+msgid "Automatic"
+msgstr "自動"
+
+#: cookie-notice.php:527
+msgid "Enable to reload the page after cookies are accepted."
+msgstr "有効にすると Cookie の承諾後にページを再読込します。"
+
+#: cookie-notice.php:397
+msgid "Reloading"
+msgstr "再読込"
+
+#: cookie-notice.php:494
+msgid "To get the cookie notice status use <code>cn_cookies_accepted()</code> function."
+msgstr "Cookie に関する通知の状態を取得するには <code>cn_cookies_accepted()</code> 関数を使用してください。"
+
+#: cookie-notice.php:464
+msgid "The text of the button to refuse the usage of the cookies."
+msgstr "Cookie の使用を拒否する選択肢の文です。"
+
+#: cookie-notice.php:396
+msgid "Script blocking"
+msgstr "ブロックされるスクリプト"
+
+#: cookie-notice.php:358
+msgid "Check out our other <a href=\"%s\" target=\"_blank\">WordPress plugins</a>."
+msgstr "私たちの他の <a href=\"%s\" target=\"_blank\">WordPress プラグイン</a>をチェックしてみてください。"
+
+#: cookie-notice.php:357
+msgid "Blog about it & link to the <a href=\"%s\" target=\"_blank\">plugin page</a>."
+msgstr "このプラグインについて記事を書いたり、<a href=\"%s\" target=\"_blank\">プラグインページ</a>へリンクしてください。"
+
+#: cookie-notice.php:356
+msgid "<a href=\"%s\" target=\"_blank\">Rate it 5</a> on WordPress.org"
+msgstr "WordPress.org で<a href=\"%s\" target=\"_blank\">星5つの評価</a>をしてください。"
+
+#: cookie-notice.php:353
+msgid "If you are having problems with this plugin, please browse it's <a href=\"%s\" target=\"_blank\">Documentation</a> or talk about them in the <a href=\"%s\" target=\"_blank\">Support forum</a>"
+msgstr "もしこのプラグインについてわからないことがあった場合、<a href=\"%s\" target=\"_blank\">ドキュメンテーション</a>に目を通すか、その問題について<a href=\"%s\" target=\"_blank\">サポートフォーラム</a>で聞いてみてください。"
+
+#: cookie-notice.php:551
+msgid "Need a Cookie Policy? Generate one with <a href=\"%s\" target=\"_blank\" title=\"iubenda\">iubenda</a>."
+msgstr "Need a Cookie Policy? Generate one with <a href=\"%s\" target=\"_blank\" title=\"iubenda\">iubenda</a>"
+
+#. Author URI of the plugin
+msgid "http://www.dfactory.eu/"
+msgstr "http://www.dfactory.eu/"
+
+#. Author of the plugin
+msgid "dFactory"
+msgstr "dFactory"
+
+#. Description of the plugin
+msgid "Cookie Notice allows you to elegantly inform users that your site uses cookies and to comply with the EU cookie law GDPR regulations."
+msgstr "Cookie Notice を使えば、あなたのウェブサイトでの Cookie の使用についての洗煉された通知をユーザに対して表示して、EU Cookie 法の規制に適合させることができます。"
+
+#. Plugin URI of the plugin
+msgid "http://www.dfactory.eu/plugins/cookie-notice/"
+msgstr "http://www.dfactory.eu/plugins/cookie-notice/"
+
+#: cookie-notice.php:1080
+msgid "Are you sure you want to reset these settings to defaults?"
+msgstr "本当に設定を初期化しますか？"
+
+#: cookie-notice.php:1008
+msgid "Settings"
+msgstr "設定"
+
+#: cookie-notice.php:991
+msgid "Support"
+msgstr "サポート"
+
+#: cookie-notice.php:871
+msgid "Settings restored to defaults."
+msgstr "設定を初期化しました。"
+
+#: cookie-notice.php:732
+msgid "Choose buttons style."
+msgstr "ボタンのスタイルを選択します。"
+
+#: cookie-notice.php:711
+msgid "Number of pixels user has to scroll to accept the usage of the cookies and make the notification disappear."
+msgstr "Cookie の使用を承諾したとみなし通知を閉じるスクロールのピクセル数です。"
+
+#: cookie-notice.php:708
+msgid "Enable cookie notice acceptance when users scroll."
+msgstr "ユーザのスクロールを Cookie 使用に対する承諾とみなします。"
+
+#: cookie-notice.php:697
+msgid "Cookie notice acceptance animation."
+msgstr "Cookie に関する通知を閉じるアニメーションです。"
+
+#: cookie-notice.php:676
+msgid "Select location for your cookie notice."
+msgstr "Cookie に関する通知を表示する位置を選択します。"
+
+#: cookie-notice.php:656
+msgid "Select where all the plugin scripts should be placed."
+msgstr "スクリプトをどこに挿入するかを選択します。"
+
+#: cookie-notice.php:638
+msgid "The amount of time that cookie should be stored for."
+msgstr "Cookie が保存される期間を設定します。"
+
+#: cookie-notice.php:593
+msgid "Enter the full URL starting with http(s)://"
+msgstr "http:// から始まる完全な URL を入力してください"
+
+#: cookie-notice.php:580
+msgid "Select from one of your site's pages."
+msgstr "あなたのサイトのページから選択します"
+
+#: cookie-notice.php:569
+msgid "-- select page --"
+msgstr "-- ページを選択 --"
+
+#: cookie-notice.php:566
+msgid "Select where to redirect user for more information about cookies."
+msgstr "Cookie についての詳細情報を提供するためにユーザをリダイレクトする先を選択します。"
+
+#: cookie-notice.php:494
+msgid "Enter non functional cookies Javascript code here (for e.g. Google Analitycs) to be used after cookies are accepted."
+msgstr "Cookie の使用が承諾された後に使用される追跡 Cookie の Javascript コード（例：Google Analytics）を入力します。"
+
+#: cookie-notice.php:460
+msgid "Enable to give to the user the possibility to refuse third party non functional cookies."
+msgstr "サードパーティの追跡 Cookie を拒否する選択肢をユーザに提供します。"
+
+#: cookie-notice.php:449
+msgid "The text of the option to accept the usage of the cookies and make the notification disappear."
+msgstr "Cookie の使用を承諾して通知を閉じる選択肢の文です。"
+
+#: cookie-notice.php:436
+msgid "Enter the cookie notice message."
+msgstr "Cookie に関する通知の文章を入力します。"
+
+#: cookie-notice.php:424
+msgid "Enable if you want all plugin data to be deleted on deactivation."
+msgstr "プラグインの無効化時にプラグインの全てのデータを削除したい場合、このオプションを有効化します。"
+
+#: cookie-notice.php:409
+msgid "Colors"
+msgstr "カラー"
+
+#: cookie-notice.php:407
+msgid "Button style"
+msgstr "ボタンスタイル"
+
+#: cookie-notice.php:406
+msgid "Animation"
+msgstr "アニメーション"
+
+#: cookie-notice.php:405
+msgid "Position"
+msgstr "位置"
+
+#: cookie-notice.php:404
+msgid "Design"
+msgstr "デザイン"
+
+#: cookie-notice.php:401
+msgid "Deactivation"
+msgstr "無効化"
+
+#: cookie-notice.php:400
+msgid "Script placement"
+msgstr "スクリプト位置"
+
+#: cookie-notice.php:399
+msgid "Cookie expiry"
+msgstr "Cookie 有効期間"
+
+#: cookie-notice.php:398
+msgid "On scroll"
+msgstr "スクロール時"
+
+#: cookie-notice.php:393
+msgid "Link target"
+msgstr "リンクターゲット"
+
+#: cookie-notice.php:391
+msgid "Button text"
+msgstr "ボタンテキスト"
+
+#: cookie-notice.php:390
+msgid "Message"
+msgstr "メッセージ"
+
+#: cookie-notice.php:389
+msgid "Configuration"
+msgstr "設定"
+
+#: cookie-notice.php:373
+msgid "Reset to defaults"
+msgstr "デフォルトにリセット"
+
+#: cookie-notice.php:355
+msgid "Do you like this plugin?"
+msgstr "このプラグインを気に入っていただけましたか ?"
+
+#: cookie-notice.php:352
+msgid "Need support?"
+msgstr "サポートが必要ですか ?"
+
+#. Plugin Name of the plugin
+#: cookie-notice.php:336 cookie-notice.php:347 cookie-notice.php:350
+msgid "Cookie Notice"
+msgstr "Cookie Notice"
+
+#: cookie-notice.php:192
+msgid "No"
+msgstr "いいえ"
+
+#: cookie-notice.php:191
+msgid "Ok"
+msgstr "OK"
+
+#: cookie-notice.php:190
+msgid "We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it."
+msgstr "よりよいエクスペリエンスを提供するため、当ウェブサイトでは Cookie を使用しています。引き続き閲覧する場合、Cookie の使用を承諾したものとみなされます。"
+
+#: cookie-notice.php:184
+msgid "Footer"
+msgstr "フッター"
+
+#: cookie-notice.php:183
+msgid "Header"
+msgstr "ヘッダー"
+
+#: cookie-notice.php:179
+msgid "Slide"
+msgstr "スライド"
+
+#: cookie-notice.php:178
+msgid "Fade"
+msgstr "フェード"
+
+#: cookie-notice.php:173
+msgid "infinity"
+msgstr "無期限"
+
+#: cookie-notice.php:172
+msgid "1 year"
+msgstr "1年"
+
+#: cookie-notice.php:171
+msgid "6 months"
+msgstr "6ヶ月"
+
+#: cookie-notice.php:170
+msgid "3 months"
+msgstr "3ヶ月"
+
+#: cookie-notice.php:169
+msgid "1 month"
+msgstr "1ヶ月"
+
+#: cookie-notice.php:168
+msgid "1 week"
+msgstr "1週間"
+
+#: cookie-notice.php:167
+msgid "1 day"
+msgstr "1日"
+
+#: cookie-notice.php:162
+msgid "Bar color"
+msgstr "バーの色"
+
+#: cookie-notice.php:161
+msgid "Text color"
+msgstr "テキスト色"
+
+#: cookie-notice.php:151
+msgid "Page link"
+msgstr "ページリンク"
+
+#: cookie-notice.php:152
+msgid "Custom link"
+msgstr "カスタムリンク"
+
+#: cookie-notice.php:142
+msgid "Bootstrap"
+msgstr "Bootstrap"
+
+#: cookie-notice.php:141
+msgid "WordPress"
+msgstr "WordPress"
+
+#: cookie-notice.php:140 cookie-notice.php:177
+msgid "None"
+msgstr "なし"
+
+#: cookie-notice.php:136
+msgid "Bottom"
+msgstr "下"
+
+#: cookie-notice.php:135
+msgid "Top"
+msgstr "上"

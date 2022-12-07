@@ -1,0 +1,71 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-box-insurance {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__box {
+        border:1px solid rgb(192, 208, 225);
+        .transition(all, 0.5s, ease);
+        margin-bottom: 30px;
+        padding: 25px 20px;
+        &:hover {
+            box-shadow: 0px 15px 25px 0px rgba(6, 65, 123, 0.1);
+        }
+        .title {
+            .font-medium;
+            font-size: @font-20;
+            margin-bottom: 15px;
+        }
+        .content {
+            font-size: @font-14;
+            margin-bottom: 20px;
+        }
+        &.box-one, &.box-seven {
+            padding: 0;
+            background: #004488;
+        }
+    }
+    &__image {
+        img {
+            max-width: 100%;
+            @media @md-max {
+                width: 100%;
+            }
+        }
+    }
+    &__data {
+        color: @color-white;
+        padding: 25px 20px;
+    }
+}

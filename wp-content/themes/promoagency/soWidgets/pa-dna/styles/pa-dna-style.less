@@ -1,0 +1,192 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-dna {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+
+    &__chart {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+
+        @media @lg-max { 
+            background-image: url(/wp-content/themes/promoagency/dist/img/dna-mobile.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+
+        @media @md-max { 
+            flex-wrap: wrap;
+            background-image: none;
+        }
+
+        &__left {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+
+            @media @xl-max { 
+                padding-right: 15px;
+            }
+
+            @media @lg-max { 
+                width: 50%;
+                text-align: center;
+            }
+
+            @media @md-max { 
+                width: 100%;
+                padding-right: 0;
+            }
+
+            &__top {
+                height: 50%;
+                padding-top: 25px;
+
+                @media @xl-max { 
+                    padding-top: 10px;
+                }
+            }
+
+            &__bottom {
+                height: 50%;
+                padding-top: 25px;
+            }
+
+            &__icon {
+                display: none;
+
+                @media @lg-max { 
+                    display: block;
+                }
+            }
+
+            &__header {
+                font-size: @font-20;
+                margin-bottom: 10px;
+                text-align: right;
+
+                @media @lg-max { 
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+
+            &__text {
+                text-align: right;
+
+                @media @lg-max { 
+                    text-align: center;
+                    max-width: 200px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        &__center {
+            
+            @media @lg-max { 
+                display: none;
+            }
+        }
+
+        &__right {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+
+            @media @xl-max { 
+                padding-left: 15px;
+            }
+
+            @media @lg-max { 
+                width: 50%;
+                text-align: center;
+            }
+
+            @media @md-max { 
+                width: 100%;
+                padding-left: 0;
+            }
+            
+            &__top {
+                height: 50%;
+                padding-top: 25px;
+
+                @media @xl-max { 
+                    padding-top: 10px;
+                }
+
+                @media @md-max { 
+                    height: auto;
+                }
+            }
+
+            &__bottom {
+                height: 50%;
+                padding-top: 25px;
+
+                @media @md-max { 
+                    height: auto;
+                }
+            }
+
+            &__icon {
+                display: none;
+
+                @media @lg-max { 
+                    display: block;
+                }
+            }
+
+            &__header {
+                font-size: @font-20;
+                margin-bottom: 10px;
+
+                @media @lg-max { 
+                    margin-top: 20px;
+                    text-align: center;
+                }
+            }
+
+            &__text {
+
+                @media @lg-max { 
+                    text-align: center;
+                    max-width: 200px;
+                    margin: 0 auto;
+                }
+
+            }
+        }
+    }
+}

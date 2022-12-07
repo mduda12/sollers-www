@@ -1,0 +1,73 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 65px;
+@widget_padding_bottom : 60px;
+@bg_offset : 0;
+@bg_color : #004888;
+
+.pa-misc-goqu-counter {
+    background-color: @bg_color;
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__wrapper {
+        position: relative;
+        padding-top: @widget_padding_top;
+        padding-bottom: @widget_padding_bottom;
+        .quote-before {
+            width: 188px;
+            height: 37px;   
+            position: absolute;
+            left:0;
+            top:-15px;
+            background: @color-blue;
+            display: block;
+            text-align: right;
+            padding-right: 15px;
+            @media @sm-max { 
+                left:0
+            }
+        }
+        .quote-after {
+            content: '';
+            width: 188px;
+            height: 37px;   
+            position: absolute;
+            right:0;
+            bottom:-15px;
+            background: @color-blue;
+            display: block;
+            @media @sm-max { 
+                right:0
+            }
+        }
+    }
+    &__before {
+        text-align: center;
+        font-size: @font-22;
+    }
+    &__after {
+        text-align: center;
+        font-size: @font-22;
+    }
+    &__number {
+        text-align: center;
+        font-size: @font-120;
+        .font-bold;
+        color: @color-white;
+    }
+}

@@ -1,0 +1,96 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+@column_top_padding : 50px;
+@column_bottom_padding : 0px;
+
+.pa-txt-img-universal {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__background {
+        background-color: @bg_color;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__image {
+        text-align: center;
+        position: relative;
+        img {
+            max-width: 100%;
+        }
+        @media @lg-max {
+            margin-top: 25px;
+        }
+    }
+    &__video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+    &__wrapper {
+        padding-top: @column_top_padding;
+        padding-bottom: @column_bottom_padding;
+        &.background {
+            background: url(/wp-content/themes/promoagency/dist/img/vertical-tab-line-bg.png) center center no-repeat;
+        }
+    }
+    &__content {
+        line-height: 1.75;
+        .so-panel.widget & ul {
+            padding-left: 0;
+            border-top: 1px solid @color-bg-nav-gray;
+            list-style: none;
+            li {
+                border-bottom: 1px solid @color-bg-nav-gray;
+                padding: 14px 0 14px 40px;
+                background-image: url(/wp-content/themes/promoagency/dist/img/ul-point.png);
+                background-repeat: no-repeat;
+                background-position: left top 16px;
+            }
+        }
+
+        &.li_nounderline {
+
+            .so-panel.widget & ul {
+                border-top: none;
+                padding-top: 20px;
+
+                li {
+                    border-bottom: none;
+                    padding: 5px 0 5px 40px;
+                    background-position: left top 6px;
+                }
+            }
+        }
+    }
+    &__button {
+        margin-top: 25px;
+    }
+}
+  

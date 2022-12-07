@@ -1,0 +1,89 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-banner-four-col {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+
+    &__item {
+        display: flex;
+
+        @media @lg-max {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        &--1 {
+
+            @media @lg-max {
+                justify-content: center;
+            }
+        }
+
+        &--2 {
+            justify-content: center;
+        }
+
+        &--3 {
+            justify-content: center;
+        }
+
+        &--4 {
+            justify-content: flex-end;
+
+            @media @lg-max {
+                    justify-content: center;
+                }
+        }
+
+        &__header {
+            font-size: @font-48;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            background: url(/wp-content/themes/promoagency/dist/img/white-underline.png) left bottom no-repeat;
+
+            @media @lg-max {
+                background: none;
+            }
+        }
+
+        &__text {
+            .font-light();
+            font-size: @font-22;
+            line-height: 1.3;
+
+            strong {
+                .font-regular();
+            }
+        }
+    }
+}

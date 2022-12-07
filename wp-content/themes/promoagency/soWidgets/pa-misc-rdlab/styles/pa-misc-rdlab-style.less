@@ -1,0 +1,92 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-misc-rdlab {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__background {
+        background-color: @bg_color;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__wrapper {
+        padding: 0 15px;
+    }
+    &__header {
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+    }
+    &__nav {
+        ul {
+             li {
+                 padding: 15px;
+                 cursor: pointer;
+                 list-style: none;
+                 background: none;
+                 display: inline-block;
+                 position: absolute;
+                 top: 98px;
+                 z-index: 100;
+                 &.slider-rdlab-prev {
+                     left:15px;
+                 }
+                 &.slider-rdlab-next {
+                     right:15px;
+                 }
+             }
+        } 
+    }
+    &__logo {
+        margin-top: 30px;
+        text-align: center;
+        img {
+            border-radius: 50%;
+            .transition(all, 0.5s, ease);
+            border: 12px solid transparent;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            &:hover {
+                border: 12px solid #f5f9ee;
+            }
+        }
+    }
+    &__title {
+        text-align: center;
+        font-size: @font-22;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: @color-text-blue-dark;
+    }
+    &__content {
+        font-size: @font-14;
+        line-height: 1.75;
+    }
+}

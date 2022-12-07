@@ -1,0 +1,83 @@
+/* Button  - Add row */
+.siteorigin-panels-builder .so-builder-toolbar .so-tool-button.so-row-add { display: none; }
+
+/* Button  - Layouts */
+.siteorigin-panels-builder .so-builder-toolbar .so-tool-button.so-prebuilt-add { display: none; }
+
+/* Button - edit row */
+.so-dropdown-wrapper .so-dropdown-links-wrapper ul li a.so-row-settings { 
+    display: none; 
+}
+
+/* Toolbar */
+.siteorigin-panels-builder .so-rows-container .so-row-toolbar { display: none; }
+
+/* Toolbar - popup */
+#panels-menu-section-add-widget-below,
+#panels-menu-section-add-row,
+#panels-menu-section-row-actions
+{ display: none; }
+
+/* Edit widget - right sidebar */
+.so-panels-dialog.so-panels-dialog-has-right-sidebar .so-right-sidebar .style-section-wrapper:nth-of-type(2),
+.so-panels-dialog.so-panels-dialog-has-right-sidebar .so-right-sidebar .style-section-wrapper:nth-of-type(3),
+.so-panels-dialog.so-panels-dialog-has-right-sidebar .so-right-sidebar .style-section-wrapper:nth-of-type(4) {
+    display: none;
+}
+
+/* New page */
+.so-panels-welcome-message {
+    display: none!important;
+}
+
+/* Button - preview widget */
+.siteorigin-widget-preview .siteorigin-widget-preview-button {
+    display: none;
+}
+
+/* Empty Builder Tab */
+#acf-group_5e383174382df {
+    display: none!important;
+}
+
+/* Add widget - left menu */
+.so-panels-dialog .so-left-sidebar .so-sidebar-tabs li a[href="#0"],
+.so-panels-dialog .so-left-sidebar .so-sidebar-tabs li a[href="#widgets_bundle"],
+.so-panels-dialog .so-left-sidebar .so-sidebar-tabs li a[href="#page_builder"],
+.so-panels-dialog .so-left-sidebar .so-sidebar-tabs li a[href="#wordpress"],
+.so-panels-dialog .so-left-sidebar .so-sidebar-tabs li a[href="#recommended"]  {
+    display: none;
+}
+
+/* Add widget - toolbar */
+.so-panels-dialog .so-toolbar .so-status {
+    display: none;
+}
+
+
+
+
+/*Zmiany dodana przez Sollers Sp.z.o.o */
+
+/* Stylizacja wyświetlania zdjęć w insights
+
+Tylko Dodanie po ręcznym dodaniu jednej z klas do obrazka.
+
+*/
+
+
+.sl-center-align{
+
+text-align: center;
+}
+
+.sl-float-right{
+
+float: right;
+}
+
+.sl-float-left{
+float: left;
+
+}
+

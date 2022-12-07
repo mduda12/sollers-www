@@ -1,0 +1,66 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@header_padding_top : 50px;
+@header_padding_bottom : 50px;
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-box-dms {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+        &.pa-alternative {
+            background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left-alternative.png);
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+        &.pa-alternative {
+            background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right-alternative.png);
+        }
+    }
+    &__box {
+        background: @color-bg-white;
+        -webkit-box-shadow: 0px 15px 10px 0px rgba(6, 65, 123, 0.1);
+        -moz-box-shadow: 0px 15px 10px 0px rgba(6, 65, 123, 0.1);
+        box-shadow: 0px 15px 10px 0px rgba(6, 65, 123, 0.1);
+        position: relative;
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &__data {
+        padding: 25px 20px 20px 20px;
+        width: 100%;
+        background: @color-bg-white;
+        span {
+            display: block;
+            &.title {
+                font-size: @font-18;
+                line-height: 1.33;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

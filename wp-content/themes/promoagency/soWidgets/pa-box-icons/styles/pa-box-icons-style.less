@@ -1,0 +1,64 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_color : #ecf0f5;
+
+.pa-box-icons {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &__header {
+        text-align: center;
+        margin-bottom: 30px;
+        .header {
+            .font-regular;
+        }
+    }
+    &__subheader {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__box {
+        background: @color-bg-white;
+        margin-bottom: 30px;
+        .transition(all, 0.5s, ease);
+        a {
+            text-decoration: none;
+            color: @color-text-blue-dark;
+        }
+        .icon {
+            padding-left: 25px;
+            padding-top: 25px;
+            padding-bottom: 20px;
+            position: relative;
+            &:after {
+                content: '';
+                width: 75px;
+                height: 5px;
+                display: block;
+                background: @color-bg-nav-green;
+                position: absolute;
+                bottom:0;
+                left: 0;
+            }
+        }
+        .title {
+            padding: 20px;
+            display: block;
+        }
+        &:hover {
+            box-shadow: 0px 15px 10px 0px rgba(6, 65, 123, 0.1);
+            transform: scale(1.05);
+        }
+        &--title {
+            padding: 20px 0;
+        }
+    }
+}
+  

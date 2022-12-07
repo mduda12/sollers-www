@@ -1,0 +1,7 @@
+.floo
+.flooignore
+.idea
+./composer.phar
+./vendor
+./cache/*.php
+./log/*.log

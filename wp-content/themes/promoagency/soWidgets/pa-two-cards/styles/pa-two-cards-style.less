@@ -1,0 +1,83 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+@header_one_bg : #004488;
+@header_two_bg : #9cc85d;
+
+.pa-two-cards {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+
+    &__item {
+        box-shadow: 0px 10px 30px 0px rgba(6, 65, 123, 0.15);
+        height: 100%;
+
+        @media @lg-max {
+            margin-bottom: 30px;
+            height: auto;
+        }
+
+        &__header {
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            font-size: @font-30;
+            color: @color-white;
+            padding: 25px;
+
+            @media @lg-max {
+                font-size: @font-24;
+            }
+
+            @media @md-max {
+                font-size: @font-22;
+            }
+
+            &--one {
+                background-color: @header_one_bg;
+            }
+
+            &--two {
+                background-color: @header_two_bg;
+            }
+        }
+
+        &__bottom {
+            padding: 30px 25px;
+        }
+
+        &__subheader {
+            font-size: @font-20;
+            margin-bottom: 30px;
+
+            @media @md-max {
+                font-size: @font-18;
+            }
+        }
+    }
+}

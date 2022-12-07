@@ -1,0 +1,212 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+@column_top_padding : 0px;
+@column_bottom_padding : 0px;
+
+.pa-misc-dms {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+    }
+    &__wrapper {
+        padding-top: @column_top_padding;
+        padding-bottom: @column_bottom_padding;
+        &.background {
+            background: url(/wp-content/themes/promoagency/dist/img/vertical-tab-line-bg.png) center center no-repeat;
+        }
+    }
+    &__content {
+        line-height: 1.75;
+        ul {
+            padding-left: 0;
+            list-style: none;
+            li {
+                padding: 0 40px 28px 40px;
+                background-image: url(/wp-content/themes/promoagency/dist/img/ul-point.png);
+                background-repeat: no-repeat;
+                background-position: left top 2px;
+            }
+        }
+    }
+    &__chart {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        max-width: 410px;
+        margin: 0 auto;
+        @media @lg-max {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        img {
+            max-width: 100%;
+        }
+        @media @sm-max {
+            @supports (-webkit-touch-callout: none) {
+                .pa-misc-dms__chart img {
+                    width: 360px;
+                    height: 360px;
+                }
+            }
+        }
+
+        &__text {
+            margin-top: 45px;
+            font-size: @font-14;
+        }
+    }
+    &__button {
+        position: absolute;
+
+        &.active {
+
+            button {
+                background-image: url(/wp-content/themes/promoagency/dist/img/tooltip-plus-minus-white.png);
+                background-position: left -37px top 3px;
+                box-shadow: 0 0 0 8px rgba(176, 188, 212, 0.7);
+            }
+        }
+        
+        button {
+            border: none;
+            box-shadow: 0 0 0 8px rgba(255,255,255, 0.32);
+            width: 31px;
+            height: 31px;
+            border-radius: 50%;
+            outline: none;
+            background-color: @color-white;
+            color: @color-text-blue-dark;
+            background-image: url(/wp-content/themes/promoagency/dist/img/tooltip-plus-minus-white.png);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: left -1px top -1px;
+            .transition(opacity, 0.2s, ease-in-out);
+            display: block;
+            position: relative;
+
+            .pa-misc-dms__tooltip {
+                position: relative;
+                height: auto;
+                background-color: @color-white;
+                width: 130px;
+                padding: 15px;
+                font-size: @font-14;
+                z-index: 5;
+                opacity: 0;
+                cursor: default;
+                pointer-events: none;
+                .transition();
+                line-height: 1.5;
+                box-shadow: 0px 10px 20px 0px rgba(176, 188, 212, 0.7);
+                border-radius: 10px;
+                margin-left: -147px;
+                margin-top: -50px;
+                min-height: 100px;
+
+
+                &.active {
+                    opacity: 1;
+                    .transition(0.4s);
+                    .arrow {
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        background-color: @color-white;
+                        position: absolute;
+                        right: -6px;
+                        top: 60px;
+                        transform: rotate(45deg);
+                    }
+                }
+
+                &.tooltip-one {
+                    @media @md-max {
+                        margin-left: 32px;
+                        &.active {
+                            .arrow {
+                                right: auto;
+                                left: -6px;
+                            }
+                        }
+                    }
+                }
+                &.tooltip-five {
+                    @media @md-max {
+                        margin-left: 32px;
+                        &.active {
+                            .arrow {
+                                right: auto;
+                                left: -6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.button-one {
+            left: 82px;
+            top: 10px;
+            button {
+                background-color: #004884;
+            }
+        }
+
+        &.button-two  {
+            top: 28px;
+            right: 58px;
+            button {
+                background-color: #6eb1da;
+            }
+        }
+
+        &.button-three {
+            right: 10px;
+            bottom: 22%;
+            button {
+                background-color: #0077b5;
+            }
+        }
+
+        &.button-four {
+            bottom: -19px;
+            left: 42%;
+            button {
+                background-color: #99d164;
+            }
+        }
+
+        &.button-five {
+            left: -10px;
+            bottom: 32%;
+            button {
+                background-color: #4ac57f;
+            }
+        }
+    }
+
+}

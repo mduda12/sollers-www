@@ -1,0 +1,91 @@
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/mixin.less';
+@import '/wp-content/themes/promoagency/soWidgets/_core/less/variables';
+
+@widget_padding_top : 50px;
+@widget_padding_bottom : 50px;
+@bg_offset : 0;
+@bg_color : #ffffff;
+
+.pa-steps-rife-01 {
+    padding-top: @widget_padding_top;
+    padding-bottom: @widget_padding_bottom;
+    background-color: @bg_color;
+    @media @sm-max { 
+        padding-top: calc( @widget_padding_top / 2 );
+        padding-bottom: calc( @widget_padding_bottom / 2 );
+    }
+    &.pa-background-left {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' left;
+        }
+        &.pa-alternative {
+            background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-left-alternative.png);
+        }
+    }
+    &.pa-background-right {
+        background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right.png);
+        background-repeat: no-repeat;
+        background-position: top ~'@{bg_offset}px' center;
+        @media @xxl {
+            background-position: top ~'@{bg_offset}px' right;
+        }
+        &.pa-alternative {
+            background-image: url(/wp-content/themes/promoagency/dist/img/pa-backgrounds/sollers-pattern-right-alternative.png);
+        }
+    }
+    &__image {
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+        @media @lg-max {
+            margin-top: 50px;
+        }
+    }
+    &__number {
+        font-size: @font-55;
+        color: @color-blue-light-rife;
+        padding-right: 25px;
+    }
+    &__header {
+        border-left: 1px solid @color-bg-nav-gray;
+        padding-left: 25px;
+        margin-top: 15px;
+        .font-rife;
+    }
+    &__point {
+        border-bottom: 1px solid @color-bg-nav-gray;
+        padding-bottom: 10px;
+        cursor: pointer;
+        position: relative;
+        img {
+            position: absolute;
+            left:0;
+            top:20px;
+            transform: rotate(180deg);
+            opacity: 0.5;
+            .transition(all, 0.5s, ease);
+        }
+        .title {
+            font-size: @font-18;
+            padding: 20px 20px 10px 45px;
+        }
+        .content {
+            line-height: 1.75em;
+            padding-left: 45px;
+        }
+        &.open {
+            img {
+                transform: rotate(0);
+                opacity: 1;
+            }
+        }
+    }
+    &__content {
+        margin-top: 15px;
+    }
+}
+  
