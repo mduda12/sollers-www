@@ -21,16 +21,134 @@ Tylko Dodanie po ręcznym dodaniu jednej z klas do obrazka.
 
 .sl-center-align{
 
-text-align: center;
-}
-
-.sl-float-right{
-
-float: right;
-}
-
-.sl-float-left{
-float: left;
-
-}
-
+    text-align: center;
+    }
+    
+    .sl-float-right{
+    
+    float: right;
+    }
+    
+    .sl-float-left{
+    float: left;
+    
+    }
+    
+    .insights-single__right__form span input[type="text"], 
+    .insights-single__right__form span input[type="email"],
+    .insights-single__right__form span textarea {
+        border-bottom: 1px solid rgb(237, 242, 246) !important;
+        border-top: 0px solid !important;
+        border-left: 0px solid !important;
+        border-right: 0px solid !important;
+        padding: 8px 0;
+        margin-top: 16px;
+        font-family: Verdana !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        color: #003262 !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+    
+    .insights-single__right__form form {
+        height: 500px;
+        overflow-y: auto;
+        padding-right: 15px;
+    }
+    
+    .insights-single__right__form span input::-webkit-input-placeholder,
+    .insights-single__right__form span textarea::-webkit-input-placeholder {
+        color: #003262 !important;
+    }
+    
+    .insights-single__right__form span input::-moz-placeholder,
+    .insights-single__right__form span textarea::-moz-placeholder {
+        color: #003262 !important;
+        opacity: 1;
+    }
+    
+    .insights-single__right__form span input:-ms-input-placeholder,
+    .insights-single__right__form span textarea:-ms-input-placeholder {
+        color: #003262 !important;
+    }
+    
+    .insights-single__right__form span textarea {
+        height: 100px;
+    }
+    
+    .insights-single__right__form span.acceptance-privacy-insights-contact-form .wpcf7-list-item,
+    .insights-single__right__form span.acceptance-marketing-insights-contact-form .wpcf7-list-item {
+        margin: 0;
+    }
+    
+    .insights-single__right__form span input[type="checkbox"] {
+        float: left;
+    }
+    
+    .insights-single__right__form span.acceptance-privacy-insights-contact-form .wpcf7-list-item .wpcf7-list-item-label,
+    .insights-single__right__form span.acceptance-marketing-insights-contact-form .wpcf7-list-item .wpcf7-list-item-label {
+        font-family: sans-serif;
+        font-weight: 400 !important;
+        font-size: 10px !important;
+        color: #003262 !important;
+        line-height: 14px !important;
+        padding-left: 20px;
+        text-indent: 0px;
+        display: block;
+        text-align: justify;
+    }
+    
+    .insights-single__right__form span.acceptance-privacy-insights-contact-form .wpcf7-list-item {
+        margin-top: 12px;
+    }
+    
+    .insights-single__right__form span.acceptance-privacy-insights-contact-form .wpcf7-list-item .wpcf7-list-item-label a {
+        color: #0066cc !important;
+        text-decoration: underline;
+    }
+    
+    .insights-single__right__form span.acceptance-privacy-insights-contact-form .wpcf7-list-item .wpcf7-list-item-label .requiredStar {
+        color: #ff0000;
+    }
+    
+    .insights-single__right__form .send-message-insight-contact-form {
+        overflow: visible;
+        white-space: nowrap;
+        max-width: 100%;
+        margin-bottom: 0;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        border: 0 solid transparent;
+        font-family: neo-sans,sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        outline: 0;
+        transition: color .3s,background-color .3s,border-color .3s,opacity .3s,box-shadow .3s,transform .3s;
+        background: #99da4f;
+        position: relative;
+        display: inline-block;
+        padding: 17px 27px;
+        border-radius: 0;
+        letter-spacing: 1px;
+        color: #003262 !important;
+    }
+    
+    .insights-single__right__form span .wpcf7-not-valid-tip {
+        color: red !important;
+        font-size: 10px !important;
+        font-family: sans-serif !important;
+        font-weight: 300 !important;
+        font-display: swap !important;
+        margin-top: 5px !important;
+    }
+    
+    .insights-single__right__form form .wpcf7-response-output {
+        display: none !important;
+    }

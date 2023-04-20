@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <?php wp_head(); ?>
-<link rel="stylesheet" type="text/css" href="https://sollers.eu/wp-content/themes/promoagency/style.css">
+<link rel="stylesheet" type="text/css" href="http://sollers.test/wp-content/themes/promoagency/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ref1niz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <?php the_field("ts_code_head", "options"); ?>

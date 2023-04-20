@@ -237,10 +237,17 @@ $linkedin_button = get_field('insights_linkedin_button');
 
                     <?php 
                         $insights_single_sidebar_form_code = get_field('insights_single_sidebar_form_code'); 
+                        $insights_single_sidebar_embed_contact_form = get_field('insights_embed_contact_form');
                     ?>
-                    <?php if($insights_single_sidebar_form_code) { ?>
+                    <?php if($insights_single_sidebar_form_code || $insights_single_sidebar_embed_contact_form) { ?>
                     <div class="insights-single__right__form">
-                        <?php echo $insights_single_sidebar_form_code; ?>
+                        <?php
+                            if ($insights_single_sidebar_form_code) {
+                                echo $insights_single_sidebar_contact_form; 
+                            } elseif ($insights_single_sidebar_embed_contact_form) {
+                                echo $insights_single_sidebar_embed_contact_form;
+                            }
+                        ?>
                     </div>
                     <?php } ?>
                 </div>
